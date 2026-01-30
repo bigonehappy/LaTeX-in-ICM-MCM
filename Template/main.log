@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  31 JAN 2026 17:50
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  30 JAN 2026 19:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1134,11 +1134,25 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 175
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [1
 
-] (./main.toc)
+] (./main.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+ (d:/TexLive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+ (d:/TexLive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [2] (./1-introduction.tex) (./2-notations.tex) (./3-ideal_battery.tex) (./4-actual_battery.tex) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) (./7-appendix.tex) (./8-references.tex) (./9-ai_use_report.tex) 
+ [2] (./1-introduction.tex) (./2-notations.tex) (./3-ideal_battery.tex
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 5.
+ (d:/TexLive/2024/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+) [3
+
+]) (./4-actual_battery.tex) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) [4] (./7-appendix.tex) (./8-references.tex) (./9-ai_use_report.tex) 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1146,15 +1160,15 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: D593D86641FEF67273CF412EAA249418;670.
  ) 
 Here is how much of TeX's memory you used:
- 35165 strings out of 476720
- 687555 string characters out of 5801445
- 1923842 words of memory out of 5000000
- 56564 multiletter control sequences out of 15000+600000
- 570759 words of font info for 49 fonts, out of 8000000 for 9000
+ 35261 strings out of 476720
+ 689032 string characters out of 5801445
+ 1930842 words of memory out of 5000000
+ 56636 multiletter control sequences out of 15000+600000
+ 577488 words of font info for 70 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 94i,12n,107p,688b,371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,13n,107p,688b,371s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (2 pages).
+Output written on main.pdf (4 pages).

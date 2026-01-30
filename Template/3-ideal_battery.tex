@@ -1,0 +1,80 @@
+\section{Ideal Battery}
+    \subsection{Assumptions}
+        To consider an simplist ideal battery model, the following assumptions are made:
+        \begin{itemize}
+            \item The battery is kept at a constant environment, so the temperature effects are neglected.
+            \item The battery has no energy loss during charging and discharging.
+            \item The battery has infinite cycle life, so the degradation effects are neglected and all the parameters are constant.
+        \end{itemize}
+
+    \subsection{Thevenin Model}
+        A Li-ion battery system can be extremely complex, involving electrochemical, thermal and mechanical processes. However, for system-level studies,
+        an equivalent circuit model is often used to represent the battery behavior. The Thevenin model is a widely used equivalent circuit model that 
+        captures the dynamic response of the battery voltage during charge and discharge cycles. The model is described as follows:
+
+        % \begin{figure}[H]
+        %     \centering
+        %     \includegraphics[width=0.5\textwidth]{Thevenin_model.png}   % TODO: figure
+        %     \caption{Thevenin Model of a Li-ion Battery}
+        %     \label{fig:Thevenin_model}
+        % \end{figure}
+
+        According to experimental experiences, the SoC is positively correlated with the open-circuit voltage $U_{oc}$, so we can express SoC as a function
+        of $U_{oc}$:
+        \begin{equation}
+            SoC = f(U_{oc})
+        \end{equation}
+        in which $f(\cdot)$ can be obtained through curve fitting based on experimental data.
+
+        The relationship between $U_{oc}$ and other parameters in the Thevenin model can be expressed with Kirchhoff's laws:
+        \begin{equation}
+            E = U_{oc} + I R_{0} + U_{1}
+        \end{equation}
+        in which $E$ is the electromotive force.
+
+        For $U_1$ we have:
+        \begin{equation}
+            I = C_{1} \frac{dU_{1}}{dt} + \frac{U_{1}}{R_{1}}
+        \end{equation}
+
+        Differentiateing the SoC's definition with respect to time, we get:
+        \begin{equation}
+            \frac{d(SoC)}{dt} = -\frac{I}{Q_{max}}
+        \end{equation}
+        where $Q_{max}$ is the maximum capacity of the battery.
+
+        Combining the above equations, we can derive the complete Thevenin model:
+        \begin{equation}
+            \begin{cases}
+                \displaystyle \frac{d(SoC)}{dt} = -\frac{I}{Q_{max}}                            \\
+                \displaystyle \frac{dU_{1}}{dt} = -\frac{U_{1}}{R_{1} C_{1}} + \frac{I}{C_{1}}  \\
+                E = U_{oc} + I R_{0} + U_{1}                                                    \\
+                SoC = f(U_{oc}) 
+            \end{cases}
+        \end{equation}
+        or in matrix form:
+        \begin{equation}
+            \frac{d}{dt}
+            \begin{bmatrix}
+                SoC  \\
+                U_{1}
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+                0                      & 0                     \\
+                0                      & \displaystyle -\frac{1}{R_{1} C_{1}}
+            \end{bmatrix}
+            \begin{bmatrix}
+                SoC  \\
+                U_{1}
+            \end{bmatrix}
+            +
+            \begin{bmatrix}
+                \displaystyle -\frac{1}{Q_{max}}    \\
+                \displaystyle  \frac{1}{C_{1}}
+            \end{bmatrix}
+            I
+        \end{equation}
+    \subsection{Simulations}
+
+    \subsection{Result}
