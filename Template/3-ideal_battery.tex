@@ -19,40 +19,31 @@
         %     \label{fig:Thevenin_model}
         % \end{figure}
 
-        According to experimental experiences, the SoC is positively correlated with the open-circuit voltage $U_{oc}$, so we can express SoC as a function
-        of $U_{oc}$:
+        According to experimental experiences, the SoC is positively correlated with the open-circuit voltage $U_{OC}$, so we can express SoC as a function
+        of $U_{OC}$:
         \begin{equation}
-            SoC = f(U_{oc})
+            SoC = f(U_{OC})
         \end{equation}
         in which $f(\cdot)$ can be obtained through curve fitting based on experimental data.
 
-        The relationship between $U_{oc}$ and other parameters in the Thevenin model can be expressed with Kirchhoff's laws:
+        The relationship between $U_{OC}$ and other parameters in the Thevenin model can be expressed with Kirchhoff's laws:
         \begin{equation}
-            E = U_{oc} + I R_{0} + U_{1}
+            U_{OC} = U_t + I R_{0} + U_{1}
         \end{equation}
-        in which $E$ is the electromotive force.
+        in which $U_t$ is the terminal voltage.
 
         For $U_1$ we have:
         \begin{equation}
             I = C_{1} \frac{dU_{1}}{dt} + \frac{U_{1}}{R_{1}}
         \end{equation}
 
-        Differentiateing the SoC's definition with respect to time, we get:
+        Differentiateing the SoC's definition with respect to time, we get: %TODO: SoC definition reference
         \begin{equation}
             \frac{d(SoC)}{dt} = -\frac{I}{Q_{max}}
         \end{equation}
         where $Q_{max}$ is the maximum capacity of the battery.
 
-        Combining the above equations, we can derive the complete Thevenin model:
-        \begin{equation}
-            \begin{cases}
-                \displaystyle \frac{d(SoC)}{dt} = -\frac{I}{Q_{max}}                            \\
-                \displaystyle \frac{dU_{1}}{dt} = -\frac{U_{1}}{R_{1} C_{1}} + \frac{I}{C_{1}}  \\
-                E = U_{oc} + I R_{0} + U_{1}                                                    \\
-                SoC = f(U_{oc}) 
-            \end{cases}
-        \end{equation}
-        or in matrix form:
+        Combining the above equations, we can derive the complete Thevenin model in matrix form:
         \begin{equation}
             \frac{d}{dt}
             \begin{bmatrix}
