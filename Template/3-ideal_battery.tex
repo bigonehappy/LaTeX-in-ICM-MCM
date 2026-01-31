@@ -43,6 +43,7 @@
 
         Differentiateing the SoC's definition with respect to time, we get: %TODO: SoC definition reference
         \begin{equation}
+            \label{differential_equation_SoC_with_current}
             \frac{\mathrm{d}(SoC)}{\mathrm{d}t} = -\frac{I}{Q_{max}}
         \end{equation}
         where $Q_{max}$ is the maximum capacity of the battery.
@@ -125,6 +126,30 @@
         We use a Samsung INR21700 30T 3Ah Li-ion Battery Dataset to demonstrate the parameter estimation process. The fitting result are shown as 
         follows: %TODO: correct reference
         %TODO: figure of HPPC data and fitting result
+
+        %TODO: result inferred from the figure
     \subsection{Simulations}
+        With proper model parameters, we can do numerical simulations of the battery behavior under different load profiles. 2 simplified load profiles
+        are considered here: 
+        \begin{itemize}
+            \item Constant current;
+            \item Constant power.
+        \end{itemize}
+
+        \subsubsection{Constant current}
+            Since the current is constant, equation \eqref{differential_equation_SoC_with_current} can be directly integrated to get the SoC at time $t$:
+            \begin{equation}
+                SoC(t) = SoC(0) - \frac{I t}{Q_{max}}
+            \end{equation}
+            
+            And the polarization voltages $U_1, U_2$ can also be solved analytically like equation \eqref{R_C_Estimation}.
+        \subsubsection{Constant power}
+            The output power
+            \begin{equation}
+                P = U_t I
+            \end{equation}
+            is constant. In this case, analytic solutions are impossible, so we use numerical methods, here the Rk45 algorithm.
+        
+        %TODO: figures of simulation results
 
     \subsection{Result}
