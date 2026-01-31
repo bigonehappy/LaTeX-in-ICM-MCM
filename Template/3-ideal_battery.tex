@@ -5,6 +5,13 @@
             \item The battery is kept at a constant environment, so the temperature effects are neglected.
             \item The battery has no energy loss during charging and discharging.
             \item The battery has infinite cycle life, so the degradation effects are neglected and all the parameters are constant.
+            \item The Open Circuit Voltage (OCV) is only related to the SoC, so we can express the SoC as a functionof $U_{OC}$:
+                  \begin{equation}
+                    SoC = f(U_{OC})
+                  \end{equation}
+                  in which $f(\cdot)$ can be obtained through curve fitting based on experimental data.
+            \item The battery behavior is same for charging and discharging. For smartphones, which mostly use \ce{LiCoO2} batteries that has little 
+                  or no hysteresis, this assumption is reasonable.
         \end{itemize}
 
     \subsection{Thevenin Model}
@@ -19,53 +26,105 @@
         %     \label{fig:Thevenin_model}
         % \end{figure}
 
-        According to experimental experiences, the SoC is positively correlated with the open-circuit voltage $U_{OC}$, so we can express SoC as a function
-        of $U_{OC}$:
-        \begin{equation}
-            SoC = f(U_{OC})
-        \end{equation}
-        in which $f(\cdot)$ can be obtained through curve fitting based on experimental data.
+        % TODO：极化效应
 
         The relationship between $U_{OC}$ and other parameters in the Thevenin model can be expressed with Kirchhoff's laws:
         \begin{equation}
-            U_{OC} = U_t + I R_{0} + U_{1}
+            \label{Thevenin_model_KVL}
+            U_{OC} = U_t + I R_0 + U_1 + U_2
         \end{equation}
         in which $U_t$ is the terminal voltage.
 
-        For $U_1$ we have:
+        For $U_1, U_2$ we have:
         \begin{equation}
-            I = C_{1} \frac{dU_{1}}{dt} + \frac{U_{1}}{R_{1}}
+            \label{differential_equation_polarization}
+            I = C_1 \frac{\mathrm{d}U_1}{\mathrm{d}t} + \frac{U_1}{R_1} = C_2 \frac{\mathrm{d}U_2}{\mathrm{d}t} + \frac{U_2}{R_2}
         \end{equation}
 
         Differentiateing the SoC's definition with respect to time, we get: %TODO: SoC definition reference
         \begin{equation}
-            \frac{d(SoC)}{dt} = -\frac{I}{Q_{max}}
+            \frac{\mathrm{d}(SoC)}{\mathrm{d}t} = -\frac{I}{Q_{max}}
         \end{equation}
         where $Q_{max}$ is the maximum capacity of the battery.
 
         Combining the above equations, we can derive the complete Thevenin model in matrix form:
         \begin{equation}
-            \frac{d}{dt}
+            \renewcommand{\arraystretch}{2}
+            \frac{\mathrm{d}}{\mathrm{d}t}
             \begin{bmatrix}
                 SoC  \\
-                U_{1}
+                U_1  \\
+                U_2
             \end{bmatrix}
             =
             \begin{bmatrix}
-                0                      & 0                     \\
-                0                      & \displaystyle -\frac{1}{R_{1} C_{1}}
+                0                      & 0                        & 0 \\
+                0                      &  -\dfrac{1}{R_{1} C_{1}} & 0 \\
+                0                      & 0                        & -\dfrac{1}{R_{2} C_{2}}
             \end{bmatrix}
             \begin{bmatrix}
                 SoC  \\
-                U_{1}
+                U_1 \\
+                U_2
             \end{bmatrix}
             +
             \begin{bmatrix}
-                \displaystyle -\frac{1}{Q_{max}}    \\
-                \displaystyle  \frac{1}{C_{1}}
+                -\dfrac{1}{Q_{max}}    \\
+                \dfrac{1}{C_1}    \\
+                \dfrac{1}{C_2}
             \end{bmatrix}
             I
         \end{equation}
+        where $R_0, R_1, R_2, C_1, C_2, Q_{max}$ are the model parameters that need to be estimated.
+    \subsection{Parameter Estimation}
+        The Hybrid Pulse Power Characterization (HPPC) test is commonly used for this purpose. The test is conducted with steps as follows:
+        \begin{enumerate}
+            \item The battery is first fully charged to $100\%$ SoC in ways the manufacturer recommends.
+            \item After resting for a certain period(e.g. 1 hour), the battery is discharged with a constant current pulse (e.g., $0.5C$) for a short 
+                  duration (e.g., $10s$). The voltage response is recorded.
+            \item Then discharge the battery to another selected SoC point (e.g., $90\%$).
+            \item Repeat steps 2 and 3 until the battery reaches a low SoC point (e.g., $10\%$) or the maximum discharge limit the manufacturer specifies.
+            \item If needed, repeat similar steps for charging pulses.
+        \end{enumerate}
+
+        With HPPC data, the model parameters can be estimated through curve fitting techniques. The process are as follows:
+        \begin{itemize}
+            \item \textbf{Estimate $R_0$}: 
+                    The instantaneous voltage drop at the start of each pulse can be used to estimate the internal resistance $R_0$, at which point 
+                    the capacitive effects are negligible.
+                    \begin{equation}
+                        R_0 = \frac{\Delta U_{instant}}{I_{pulse}}
+                    \end{equation}
+            \item \textbf{Estimate $R_1, C_1$ and $R_2, C_2$}:
+                    Solve the polarization equation \eqref{differential_equation_polarization}, we can get the polarization voltage response:
+                    \begin{equation}
+                        U_{polar} = IR + (U_{init} - IR) e^{-\dfrac{t}{R C}}
+                    \end{equation}
+                    where $U_{init}$ is the voltage at the start of the pulse.
+
+                    Without loss of generality, let $C_1 \leq C_2$, so that the faster electrochemical processes are represented by $R_1, C_1$ and the 
+                    slower concentration polarization effects are represented by $R_2, C_2$. Then substitute them into \eqref{Thevenin_model_KVL}, we 
+                    have:
+                    \begin{equation}
+                        \label{R_C_Estimation}
+                        U_t = U_{OC} - I(R_0 + R_1 + R_2) - (U_{1, init} - IR_1) e^{-\dfrac{t}{R_1 C_1}} - (U_{2, init} - IR_2) e^{-\dfrac{t}{R_2 C_2}}
+                    \end{equation}
+
+                    By least squares fitting of \eqref{R_C_Estimation} to the voltage response data during each pulse, we can estimate the values of
+                    $R_1, C_1$ and $R_2, C_2$ at different SoC points.
+            \item \textbf{Estimate $Q_{max}$}: 
+                    The maximum capacity $Q_{max}$ can be estimated by integrating the current over the full discharge cycle:
+                    \begin{equation}
+                        Q_{max} = \int_{t_0}^{t_f} I(t) \mathrm{d}t
+                    \end{equation}
+                    where $t_0$ and $t_f$ are the start and end times of the discharge cycle.
+
+                    Most of the time this value is provided by the manufacturer.
+        \end{itemize}
+
+        We use a Samsung INR21700 30T 3Ah Li-ion Battery Dataset to demonstrate the parameter estimation process. The fitting result are shown as 
+        follows: %TODO: correct reference
+        %TODO: figure of HPPC data and fitting result
     \subsection{Simulations}
 
     \subsection{Result}
