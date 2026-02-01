@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  1 FEB 2026 14:10
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  1 FEB 2026 18:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1198,11 +1198,19 @@ File: img/ci_soc_profile.png Graphic file (type bmp)
 <img/ci_soc_profile.png>
 File: img/ci_voltage_profile.png Graphic file (type bmp)
 <img/ci_voltage_profile.png>
+ [6]
 File: img/cp_soc_profile.png Graphic file (type bmp)
 <img/cp_soc_profile.png>
 File: img/cp_voltage_profile.png Graphic file (type bmp)
 <img/cp_voltage_profile.png>
- [6]) (./4-actual_battery.tex) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) [7] [8] (./7-appendix.tex) (./8-references.tex) (./9-ai_use_report.tex) 
+) (./4-actual_battery.tex [7]
+File: img/3d_surface_R0.png Graphic file (type bmp)
+<img/3d_surface_R0.png>
+File: img/3d_surface_R1.png Graphic file (type bmp)
+<img/3d_surface_R1.png>
+File: img/3d_surface_R2.png Graphic file (type bmp)
+<img/3d_surface_R2.png>
+ [8]) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) [9] (./7-appendix.tex) (./8-references.tex) (./9-ai_use_report.tex) 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1210,15 +1218,15 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B6A7D0D5748BA03555ED8039ABB19706;2351.
+(rerunfilecheck)             Checksum: DA37E842AEB16D21A17E81AAD76BF33D;2602.
  ) 
 Here is how much of TeX's memory you used:
- 36320 strings out of 476720
- 714384 string characters out of 5801445
+ 36370 strings out of 476720
+ 715470 string characters out of 5801445
  1933842 words of memory out of 5000000
- 57671 multiletter control sequences out of 15000+600000
- 579350 words of font info for 72 fonts, out of 8000000 for 9000
+ 57716 multiletter control sequences out of 15000+600000
+ 581980 words of font info for 81 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 94i,12n,107p,688b,418s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,13n,107p,688b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (8 pages).
+Output written on main.pdf (9 pages).

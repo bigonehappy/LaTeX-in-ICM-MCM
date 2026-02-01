@@ -9,17 +9,75 @@
             \item \textbf{Complex Power Profile}: Real batteries often experience varying power demands, which can affect their efficiency and lifespan.
                                                   High performance demands can lead to increased heat generation, which int turns affect battery 
                                                   temperature.
+            \item \textbf{Shutdown Voltage}: Electronics need a minimum voltage to operate correctly. If the battery voltage drops(steadily or suddenly) 
+                                             below this threshold, the device will shutdown even if SoC is not zero.
         \end{itemize}
 
     \subsection{Temperature Behavior of Battery}
         Actual battery behavior is significantly influenced by temperature variations. The most common parameter affected by temperature is the internal 
-        resistance. Using the Arrhenius equation, we can model the temperature dependence of internal resistance as follows:
+        resistance. Using the Arrhenius' equation, we can model the temperature dependence of internal resistance as follows:
         \begin{equation}
-            R(T) = R_0 \cdot e^{ - \dfrac{E_a}{R_u}(\dfrac{1}{T} - \dfrac{1}{T_0})}
+            R = R_0 \cdot e^{ - \dfrac{E_a}{R_u T}}
         \end{equation}
-        where $E_a$ is the activation energy, $R_u$ is the universal gas constant and $T_0$ is a reference temperature.
-    \subsection{Heat Transfer Model in High-Performance Scenarios}
+        where $R_0$ is a reference resistance, $E_a$ is the activation energy, $R_u$ is the universal gas constant and $T_0$ is a reference temperature.
+        
+        To conduct the regression, rewrite the equation in linear form by taking the natural logarithm:
+        \begin{equation}
+            \ln R  = - \frac{E_a}{R_u} \cdot \dfrac{1}{T} + \ln R_0
+        \end{equation}
 
+        The Samsung INR21700 30T 3Ah Li-ion Battery Dataset contains experimental data at various temperatures. Using this dataset again, we perform a 
+        linear regression, yielding the following results:
+
+        \begin{figure}[H]
+            \centering
+            \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\linewidth]{3d_surface_R0.png}
+                \caption{$R_0$, $E_a = 17.47 kJ/mol$}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\linewidth]{3d_surface_R1.png}
+                \caption{$R_1$, $E_a = 37.24 kJ/mol$}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\linewidth]{3d_surface_R2.png}
+                \caption{$R_2$, $E_a = 15.09 kJ/mol$}
+            \end{subfigure}
+            \caption{3D Surface Fitting of Resistance with Temperature and SoC}
+        \end{figure}
+
+    \subsection{Battery in Different Work Loads}
+
+    \subsection{Heat Transfer Model in High-Performance Scenarios}
+        In this chapter, we discuss how the heat that battery generates affacts the temperature of battery itself, and in turn impacts its own 
+        performance.
+
+        %TODO: Assumptions about heat transfer model
+
+        Let $Q$ be the internal heat power, $h$ be the convective heat transfer coefficient, $A$ be the surface area of the battery(assumed to be the area
+        of the smartphone), $C$ be the heat capacity of the battery, $T$ be the battery temperature and $T_{env}$ be the environmental temperature(assumed
+        constant). With Newton's law of cooling, we have:
+        \begin{equation}
+            \label{Law of cooling}
+            Q = h A (T - T_{env}) + C \frac{dT}{dt}
+        \end{equation}
+        
+        $Q$ can be expressed by the Joule's law as:
+        \begin{equation}
+            Q = I^2 R_{inter} = I^2 (R_0 + R_1 + R_2)
+        \end{equation}
+
+        Considering that $I$ and $R$ is time-dependent, equation \eqref{Law of cooling} is a first-order linear ODE. The solution is:
+        \begin{equation}
+            \label{Relation between T and t}
+            T = T_{env} + \frac{1}{C} \int_0^t{e^{-\dfrac{2Ah(t - s)}{C}} Q(s) \mathrm{d}s}
+        \end{equation}
+
+        Substitute equation \eqref{Relation between T and t} into the Arrhenius equation, we can get the relation between internal resistance and time,
+        and thus analyze how temperature affects battery performance over time in high-performance scenarios.
+ 
     \subsection{Answer to Question 1}
 
     \subsection{Answer to Question 2}
