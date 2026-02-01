@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  1 FEB 2026 09:39
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  1 FEB 2026 10:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1181,9 +1181,28 @@ File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ) [3
 
 ]
-File: img/fitting_curves_RC.png Graphic file (type bmp)
-<img/fitting_curves_RC.png>
- [4]) (./4-actual_battery.tex) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) [5] (./7-appendix.tex) (./8-references.tex) (./9-ai_use_report.tex) 
+File: img/fitting_OCV.png Graphic file (type bmp)
+<img/fitting_OCV.png>
+File: img/fitting_R0.png Graphic file (type bmp)
+<img/fitting_R0.png>
+File: img/fitting_C1.png Graphic file (type bmp)
+<img/fitting_C1.png>
+File: img/fitting_R1.png Graphic file (type bmp)
+<img/fitting_R1.png>
+File: img/fitting_C2.png Graphic file (type bmp)
+<img/fitting_C2.png>
+File: img/fitting_R2.png Graphic file (type bmp)
+<img/fitting_R2.png>
+ [4] [5]
+File: img/soc_profile.png Graphic file (type bmp)
+<img/soc_profile.png>
+File: img/power_profile.png Graphic file (type bmp)
+<img/power_profile.png>
+File: img/voltage_profile.png Graphic file (type bmp)
+<img/voltage_profile.png>
+File: img/polarization_voltage.png Graphic file (type bmp)
+<img/polarization_voltage.png>
+ [6]) (./4-actual_battery.tex) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) [7] (./7-appendix.tex) (./8-references.tex) (./9-ai_use_report.tex) 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1191,15 +1210,15 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EDDAF3621D95421CADA91D2F821EDC81;1218.
+(rerunfilecheck)             Checksum: B4ECC54447BC9549FCF5FE293CD54F67;1105.
  ) 
 Here is how much of TeX's memory you used:
- 36173 strings out of 476720
- 710650 string characters out of 5801445
+ 36319 strings out of 476720
+ 714360 string characters out of 5801445
  1933842 words of memory out of 5000000
- 57533 multiletter control sequences out of 15000+600000
+ 57670 multiletter control sequences out of 15000+600000
  579350 words of font info for 72 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 94i,12n,107p,688b,413s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,12n,107p,688b,418s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (5 pages).
+Output written on main.pdf (7 pages).

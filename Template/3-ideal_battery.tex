@@ -103,9 +103,9 @@
                     \end{equation}
                     where $U_{init}$ is the voltage at the start of the pulse.
 
-                    Without loss of generality, let $C_1 \leq C_2$, so that the faster electrochemical processes are represented by $R_1, C_1$ and the 
-                    slower concentration polarization effects are represented by $R_2, C_2$. Then substitute them into \eqref{Thevenin_model_KVL}, we 
-                    have:
+                    Without loss of generality, let $R_1 C_1 \leq R_2 C_2$, so that the faster electrochemical polarization are represented by $R_1, C_1$ 
+                    and the slower concentration polarization effects are represented by $R_2, C_2$. Then substitute them into \eqref{Thevenin_model_KVL},
+                    we have:
                     \begin{equation}
                         \label{R_C_Estimation}
                         U_t = U_{OC} - I(R_0 + R_1 + R_2) - (U_{1, init} - IR_1) e^{-\dfrac{t}{R_1 C_1}} - (U_{2, init} - IR_2) e^{-\dfrac{t}{R_2 C_2}}
@@ -127,10 +127,49 @@
         follows: %TODO: correct reference to dataset
         \begin{figure}[H]
             \centering
-            
+
+            \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\linewidth]{fitting_OCV.png}
+                \label{fig:fitting_OCV}
+            \end{subfigure} 
+            \hfill
+            \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\linewidth]{fitting_R0.png}
+                \label{fig:fitting_R0}
+            \end{subfigure} 
+
+            \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\linewidth]{fitting_C1.png}
+                \label{fig:fitting_C1}
+            \end{subfigure} 
+            \hfill
+            \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\linewidth]{fitting_R1.png}
+                \label{fig:fitting_R1}
+            \end{subfigure} 
+                 
+            \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\linewidth]{fitting_C2.png}
+                \label{fig:fitting_C2}
+            \end{subfigure} 
+            \hfill
+            \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\linewidth]{fitting_R2.png}
+                \label{fig:fitting_R2}
+            \end{subfigure} 
+            \caption{Fitting results of the parameter estimation process.}
+            \label{fig:parameter_estimation_results}
         \end{figure}
 
-        %TODO: result inferred from the figure
+        6-degree polynomial is used to fit the OCV-SOC curve, and cubic functions are used to fit the RC parameters.  
+
+        As the fitting result shows, the Ohm resistance $R_0$ increases significantly when SoC is low, which may be the main reason for voltage drop and 
+        device shutdown. Later we will verify this conclusion. Polarization resistances $R_1, R_2$ also increase when SoC is low, indicating the battery's 
+        internal electrochemical processes are hindered. And Polarization capacitances $C_1, C_2$ decrease when SoC is low, meaning that the battery's
+        ability to respond to load changes is weakened.
+
+        Noticed that $C_1, C_2$ drop to zero when SoC is low, which means the Thevenin model is not valid in that region. However, the smartphone will 
+        actually shutdown before the battery reaches such low SoC, because the output voltage will be too low to power the device.
     \subsection{Simulations}
         With proper model parameters, we can do numerical simulations of the battery behavior under different load profiles. 2 simplified load profiles
         are considered here: 
@@ -145,14 +184,36 @@
                 SoC(t) = SoC(0) - \frac{I t}{Q_{max}}
             \end{equation}
             
-            And the polarization voltages $U_1, U_2$ can also be solved analytically like equation \eqref{R_C_Estimation}.
+            Then perform Rk45 algorithm to the polarization voltages $U_1, U_2$ with initial conditions $U_1(0) = U_2(0) = 0$, we can get the final result
+            as follows. note that output power and loss are shown with different units.
+
+            \begin{figure}[H]
+            \centering
+
+            \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\linewidth]{soc_profile.png}
+                \label{fig:soc_profile_constant_current}
+            \end{subfigure} 
+            \hfill
+            \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\linewidth]{power_profile.png}
+                \label{fig:power_profile_constant_current}
+            \end{subfigure} 
+
+            \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\linewidth]{voltage_profile.png}
+                \label{fig:voltage_profile_constant_current}
+            \end{subfigure} 
+            \hfill
+            \begin{subfigure}{0.45\textwidth}
+                \includegraphics[width=\linewidth]{polarization_voltage.png}
+                \label{fig:polarization_voltage_constant_current}
+            \end{subfigure} 
+            \caption{Simulation results under constant current load profile}
+        \end{figure}
         \subsubsection{Constant power}
             The output power
             \begin{equation}
                 P = U_t I
             \end{equation}
-            is constant. In this case, analytic solutions are impossible, so we use numerical methods, here the Rk45 algorithm.
-        
-        %TODO: figures of simulation results
-
-    \subsection{Result}
+            is constant. In this case, analytic solutions are impossible, so we just use the Rk45 algorithm:
