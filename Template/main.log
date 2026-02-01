@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  1 FEB 2026 10:40
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  1 FEB 2026 11:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1194,14 +1194,14 @@ File: img/fitting_C2.png Graphic file (type bmp)
 File: img/fitting_R2.png Graphic file (type bmp)
 <img/fitting_R2.png>
  [4] [5]
-File: img/soc_profile.png Graphic file (type bmp)
-<img/soc_profile.png>
-File: img/power_profile.png Graphic file (type bmp)
-<img/power_profile.png>
-File: img/voltage_profile.png Graphic file (type bmp)
-<img/voltage_profile.png>
-File: img/polarization_voltage.png Graphic file (type bmp)
-<img/polarization_voltage.png>
+File: img/ci_soc_profile.png Graphic file (type bmp)
+<img/ci_soc_profile.png>
+File: img/ci_voltage_profile.png Graphic file (type bmp)
+<img/ci_voltage_profile.png>
+File: img/cp_soc_profile.png Graphic file (type bmp)
+<img/cp_soc_profile.png>
+File: img/cp_voltage_profile.png Graphic file (type bmp)
+<img/cp_voltage_profile.png>
  [6]) (./4-actual_battery.tex) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) [7] (./7-appendix.tex) (./8-references.tex) (./9-ai_use_report.tex) 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
@@ -1214,7 +1214,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  36319 strings out of 476720
- 714360 string characters out of 5801445
+ 714371 string characters out of 5801445
  1933842 words of memory out of 5000000
  57670 multiletter control sequences out of 15000+600000
  579350 words of font info for 72 fonts, out of 8000000 for 9000

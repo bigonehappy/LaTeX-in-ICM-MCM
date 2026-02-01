@@ -191,24 +191,15 @@
             \centering
 
             \begin{subfigure}{0.45\textwidth}
-                \includegraphics[width=\linewidth]{soc_profile.png}
+                \includegraphics[width=\linewidth]{ci_soc_profile.png}
                 \label{fig:soc_profile_constant_current}
             \end{subfigure} 
             \hfill
             \begin{subfigure}{0.45\textwidth}
-                \includegraphics[width=\linewidth]{power_profile.png}
-                \label{fig:power_profile_constant_current}
-            \end{subfigure} 
-
-            \begin{subfigure}{0.45\textwidth}
-                \includegraphics[width=\linewidth]{voltage_profile.png}
+                \includegraphics[width=\linewidth]{ci_voltage_profile.png}
                 \label{fig:voltage_profile_constant_current}
             \end{subfigure} 
-            \hfill
-            \begin{subfigure}{0.45\textwidth}
-                \includegraphics[width=\linewidth]{polarization_voltage.png}
-                \label{fig:polarization_voltage_constant_current}
-            \end{subfigure} 
+
             \caption{Simulation results under constant current load profile}
         \end{figure}
         \subsubsection{Constant power}
@@ -217,3 +208,21 @@
                 P = U_t I
             \end{equation}
             is constant. In this case, analytic solutions are impossible, so we just use the Rk45 algorithm:
+
+            \begin{figure}[H]
+                \centering
+                \begin{subfigure}{0.45\textwidth}
+                    \includegraphics[width=\linewidth]{cp_soc_profile.png}
+                    \label{fig:soc_profile_constant_power}
+                \end{subfigure} 
+                \hfill
+                \begin{subfigure}{0.45\textwidth}
+                    \includegraphics[width=\linewidth]{cp_voltage_profile.png}
+                    \label{fig:voltage_profile_constant_power}
+                \end{subfigure}
+                \caption{Simulation results under constant power load profile}
+            \end{figure}
+
+            It can be seen that under constant power load profile, the more the battery discharges, the larger the current it needs to provide to maintain
+            constant power output, so the voltage drops faster. This is consistent with our daily experience that devices tend to shutdown quicker when 
+            the battery is low.
