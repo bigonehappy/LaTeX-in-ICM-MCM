@@ -79,7 +79,7 @@
             Q = 2Ah (T - T_{env}) + C \frac{dT}{dt}
         \end{equation}
         
-        $Q$ can be expressed by the Joule's law as:
+        $Q$ can be divided to:
         \begin{equation}
             Q = Q_{battery} + Q_{processor} + Q_{other}
         \end{equation}
@@ -108,7 +108,7 @@
         and thus analyze how temperature affects battery performance over time in high-performance scenarios.
 
         The simulation here shows the heatmap of discharge time and max temperature under different power load and environmental temperature. It assumes 
-        if the battery temperature exceeds $50^\circ C$, the device will shutdown to protect the battery. In reality, smartphones often decreases processor
+        if the battery temperature exceeds $50\mathrm{^\circ C}$, the device will shutdown to protect the battery. In reality, smartphones often decreases processor
         frequency to reduce heat generation when temperature is too high, but for simplicity we assume an immediate shutdown here.
 
         \begin{figure}[H]
@@ -123,8 +123,11 @@
             \caption{Heatmap of Discharge Time and Max Temperature}
         \end{figure}
 
-        It can be observed that high temperature scenarios are quite dangerous for battery operation. Heavy work loads in $30 ^\circ C$ or higher summer
-        environment can easily lead to battery overheating.
+        In the simulation we set $C = 160 \mathrm{J/K}$, $A = 200 \mathrm{cm}^2$, $h = 5 \mathrm{W/(m^2 \cdot K)}$, $\eta = 0.5$ and 
+        $Q_{other} = 0.8 \mathrm{W}$.
+
+        It can be observed that high temperature scenarios are quite dangerous for battery operation. Heavy work loads in $30 \mathrm{^\circ C}$ or higher
+        can easily lead to battery overheating.
  
     \subsection{Answer to Question 1}
 
