@@ -90,11 +90,6 @@
                 \item Some of the assumptions are still idealized. For example, the model assumes a constant temperature during operation. However, 
                       smartphones often do not work in a equilibrium state. The temperature distribution around the smartphone may vary significantly, and
                       cause unignorable effects.
-                      \begin{figure}[H]
-                        \centering
-                        \includegraphics[width=0.6\textwidth]{temperature_model.png}
-                        \caption{Comparison between Idealized and More Realistic Temperature Distribution}
-                      \end{figure}
                 \item The model may not generalize well to all smartphone models and usage patterns because of the limited availability of high-quality 
                       datasets.
             \end{itemize}
@@ -102,7 +97,13 @@
         \begin{itemize}
             \item \textbf{Consider the temperature distribution in the phone}. The current model assumes a uniform temperature for easy. Actually, the 
                    temperature distribution in the phone is not uniform. Processors are almost always hotter than other components, and the heat battery
-                   itself generates may be not such important, especially in heavy usage scenarios.
+                   itself generates may be not such important, especially in heavy usage scenarios like this figure shows. ($Bi$ is the Biot number, which
+                   indicates an object's internal resistance over convective.)
+                   \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=0.6\textwidth]{temperature_model.png}
+                    \caption{Comparison between Idealized and More Realistic Temperature Distribution}
+                   \end{figure}
             \item \textbf{Consider charging scenarios}. The current model only focuses on the discharging process. However, charging is also an important
                    part of battery usage. Fast charging usually cause significant heat generation. Different charging methods (e.g., wireless charging) may
                    also have different effects on battery performance and degradation.
