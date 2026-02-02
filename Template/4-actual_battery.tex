@@ -198,7 +198,7 @@
             \label{fig:power_model_fitting}
         \end{figure}
 
-        Results demonstrate that the white-box power model constructed based on the real-world smartphone dataset achieves satisfactory prediction performance, with an $R^2$ of 0.606, an MAE of 0.355 W, and an RMSE of 0.461 W. The model is able to explain over 60\% of the variance in power consumption. Among the factors analyzed, CPU usage and data network activity exhibit the most significant impact on power draw, whereas GPS consumption and the energy-saving effects of the two included modes show relatively minor influence.
+        Results demonstrate that the white-box power model constructed based on the real-world smartphone dataset achieves satisfactory prediction performance, with an $R^2$ of 0.606, an MAE of 0.355 W, and an RMSE of 0.461 W. Among the factors analyzed, CPU usage and data network activity exhibit the most significant impact on power draw, whereas GPS consumption and the energy-saving effects of the two included modes show relatively minor influence. As mentioned above, the energy-saving effects of these two modes in practice primarily stem from their influence on the aforementioned features; the small coefficients here reflect that their impact on factors beyond those already captured is relatively minor.
 
         \subsubsection{Usage Scenario Simulation}
         The model allows us to estimate the smartphone's power consumption under various typical usage scenarios. Here are some typical scenarios and 
