@@ -64,7 +64,9 @@
         %TODO: Battery degradation model with temperature
 
     \subsection{Battery in Different Work Loads}
-        A smartphone is a complex embedded system whose total power consumption can be decomposed into the sum of contributions from its independent subsystems. According to the \textbf{Principle of Power Superposition}, when individual modules share a power supply but operate relatively independently, the total power draw can be expressed as a linear superposition of the power consumption of each module.
+        A smartphone is a complex embedded system whose total power consumption can be decomposed into the sum of contributions from its independent 
+        subsystems. According to the \textbf{Principle of Power Superposition}, when individual modules share a power supply but operate relatively 
+        independently, the total power draw can be expressed as a linear superposition of the power consumption of each module.
 
         Based on a functional module breakdown, we decompose the smartphone's power consumption into the following six primary sources:
         \begin{itemize}
@@ -77,82 +79,103 @@
         \end{itemize}
 
         Overall, the model can be written as:
-        \begin{equation}\label{eq:P_total}
-            \boxed{P_{\text{total}} = P_{\text{screen}} + P_{\text{CPU}} + P_{\text{network}} + P_{\text{GPS}} + P_{\text{audio}} + P_{\text{mode}}}
+        \begin{equation}
+            \label{eq:P_total}
+            P_{total} = P_{screen} + P_{CPU} + P_{network} + P_{GPS} + P_{audio} + P_{mode}
         \end{equation}
 
-        In this section, we will develop physical models for each component. By utilizing acquired smartphone state data, we estimate the parameters within these models, thereby obtaining a comprehensive power consumption model for complex usage scenarios.
+        By utilizing acquired smartphone state data, we estimate the parameters within these models, thereby obtaining a comprehensive power consumption 
+        model for complex usage scenarios.  %TODO: Reference to dataset
 
-        \subsubsection{Screen Power \texorpdfstring{$P_{\text{screen}}$}{P\_screen}}
+        \subsubsection{Screen Power \texorpdfstring{$P_{screen}$}{P\_screen}}
         When the screen is on, it exhibits a base power draw plus a near-linear OLED power component (the modeling here assumes an OLED display):
-        \begin{equation}\label{eq:P_screen}
-            P_{\text{screen}} = \alpha_S \cdot S + \alpha_B \cdot S \cdot \frac{B}{255}
+        \begin{equation}
+            \label{eq:P_screen}
+            P_{screen} = \alpha_S \cdot S + \alpha_B \cdot S \cdot \frac{B}{255}
         \end{equation}
         where $S$ is a screen state indicator and $B$ is the brightness level (0--255).
 
-        \subsubsection{CPU Power \texorpdfstring{$P_{\text{CPU}}$}{P\_CPU}}
+        \subsubsection{CPU Power \texorpdfstring{$P_{CPU}$}{P\_CPU}}
         CPU power is the largest variable power source in a smartphone. According to the dynamic power formula for CMOS circuits:
         \begin{equation}
-            P_{\text{dynamic}} = C \cdot V^2 \cdot f
+            P_{dynamic} = C \cdot V^2 \cdot f
         \end{equation}
         where $C$ is the load capacitance, $V$ the operating voltage, and $f$ the clock frequency.
 
-        Modern processors employ \textbf{Dynamic Voltage and Frequency Scaling (DVFS)}, introducing a coupling between voltage and frequency. Empirical studies suggest:
+        Modern processors employ \textbf{Dynamic Voltage and Frequency Scaling (DVFS)}, introducing a coupling between voltage and frequency. Empirical 
+        studies suggest:
         \begin{equation}
             V \propto f^{0.5} \quad \Rightarrow \quad P \propto f^{2.5}
         \end{equation}
 
-        Furthermore, modern ARM processors commonly adopt a \textbf{big.LITTLE heterogeneous architecture}, featuring separate big and small cores with distinct performance and power characteristics. Additionally, actual CPU power depends on its utilization; idle and fully loaded states at the same frequency exhibit significantly different power draws.
-        Thus, we derive the following CPU power model:
-        \begin{equation}\label{eq:P_CPU}
-            P_{\text{CPU}} = \alpha_U \cdot U + \alpha_{\text{big}} \cdot \left(\frac{f_{\text{big}}}{f_{\max,\text{big}}}\right)^{2.5} + \alpha_{\text{small}} \cdot \left(\frac{f_{\text{small}}}{f_{\max,\text{small}}}\right)^{2.5}
+        Furthermore, modern ARM processors commonly adopt a \textbf{big.LITTLE heterogeneous architecture}, featuring separate big and small cores with 
+        distinct performance and power characteristics. Additionally, actual CPU power depends on its utilization; idle and fully loaded states at the 
+        same frequency exhibit significantly different power draws. Thus, we derive the following CPU power model:
+        \begin{equation}
+            \label{eq:P_CPU}
+            P_{CPU} = \alpha_U \cdot U + \alpha_{big} \cdot \left(\frac{f_{big}}{f_{\max,big}}\right)^{2.5} + \alpha_{small} \cdot \left(\frac{f_{small}}{f_{\max,small}}\right)^{2.5}
         \end{equation}
-        where $U$ represents CPU utilization, and $f_{\text{big}}$, $f_{\text{small}}$ are the operating frequencies of the big and small cores, normalized to their respective maximum frequencies.
+        where $U$ represents CPU utilization, and $f_{big}$, $f_{small}$ are the operating frequencies of the big and small cores, normalized to their 
+        respective maximum frequencies.
 
-        \subsubsection{Network Power \texorpdfstring{$P_{\text{network}}$}{P\_network}}
-        Power consumption in wireless communication stems primarily from the Radio Frequency (RF) front-end, especially the Power Amplifier (PA). According to the Friis transmission equation, received power is inversely proportional to the square of the distance:
+        \subsubsection{Network Power \texorpdfstring{$P_{network}$}{P\_network}}
+        Power consumption in wireless communication stems primarily from the Radio Frequency (RF) front-end, especially the Power Amplifier (PA). 
+        According to the Friis transmission equation, received power is inversely proportional to the square of the distance:
         \begin{equation}
             P_r = P_t \cdot G_t \cdot G_r \cdot \left(\frac{\lambda}{4\pi d}\right)^2
         \end{equation}
 
-        Consequently, to maintain communication quality over distances up to several kilometers for cellular networks, relatively high transmit power is required (typically 200--500 mW). In contrast, WiFi communication with a router within tens of meters uses lower transmit power (typically 50--100 mW). Moreover, PA efficiency is typically only 30--40\%, with substantial energy converted to heat, making network power a significant contributor to total consumption.
+        Consequently, to maintain communication quality over distances up to several kilometers for cellular networks, relatively high transmit power is 
+        required (typically $200 \sim 500 \text{mW}$). In contrast, WiFi communication with a router within tens of meters uses lower transmit power 
+        (typically $50 \sim 100 \text{mW}$). Moreover, PA efficiency is typically only $30 \sim 40\%$, with substantial energy converted to heat, making
+        network power a significant contributor to total consumption.
 
         Since WiFi and cellular networks are typically used exclusively in practice, our model uses a single indicator variable for network type:
-        \begin{equation}\label{eq:P_network}
-            P_{\text{network}} = \alpha_M \cdot M
+        \begin{equation}
+            \label{eq:P_network}
+            P_{network} = \alpha_M \cdot M
         \end{equation}
         where $M$ indicates active network type.
 
-        \subsubsection{GPS Power \texorpdfstring{$P_{\text{GPS}}$}{P\_GPS}}
-        The GPS module continuously receives weak signals from multiple satellites and performs complex signal demodulation and position calculation. Its power draw is relatively stable and depends mainly on whether it is active. We adopt a discrete model:
-        \begin{equation}\label{eq:P_GPS}
-            P_{\text{GPS}} = \alpha_G \cdot G
+        \subsubsection{GPS Power \texorpdfstring{$P_{GPS}$}{P\_GPS}}
+        The GPS module continuously receives weak signals from multiple satellites and performs complex signal demodulation and position calculation. 
+        Its power draw is relatively stable and depends mainly on whether it is active. We adopt a discrete model:
+        \begin{equation}
+            \label{eq:P_GPS}
+            P_{GPS} = \alpha_G \cdot G
         \end{equation}
         where $G$ is a binary indicator for GPS activity.
 
-        \subsubsection{Audio Power \texorpdfstring{$P_{\text{audio}}$}{P\_audio}}
-        The audio module primarily involves compression/decompression processing via an audio DSP, digital-to-analog conversion (DAC), and driving speakers or headphones. We simplify the modeling to a binary indicator for audio playback activity:
-        \begin{equation}\label{eq:P_audio}
-            P_{\text{audio}} = \alpha_A \cdot A
+        \subsubsection{Audio Power \texorpdfstring{$P_{audio}$}{P\_audio}}
+        The audio module primarily involves compression/decompression processing via an audio DSP, digital-to-analog conversion (DAC), and driving 
+        speakers or headphones. We simplify the modeling to a binary indicator for audio playback activity:
+        \begin{equation}
+            \label{eq:P_audio}
+            P_{audio} = \alpha_A \cdot A
         \end{equation}
 
-        \subsubsection{System Mode Power Adjustment \texorpdfstring{$P_{\text{mode}}$}{P\_mode}}
-        Modern smartphones offer various system modes for power management, such as Power Saving Mode and Flight Mode. However, most of their energy-saving effects are achieved by altering other parameters (e.g., reducing CPU frequency, limiting network activity), which are already captured by other terms in the model. Therefore, $P_{\text{mode}}$ represents additional energy-saving mechanisms. Power Saving Mode may disable unnecessary sensors, reduce refresh rates, and optimize memory management, while Flight Mode directly powers down RF modules. The model is:
-        \begin{equation}\label{eq:P_mode}
-            P_{\text{mode}} = \alpha_E \cdot E + \alpha_F \cdot F
+        \subsubsection{System Mode Power Adjustment \texorpdfstring{$P_{mode}$}{P\_mode}}
+        Modern smartphones offer various system modes for power management, such as Power Saving Mode and Flight Mode. However, most of their energy-saving effects are achieved by altering other parameters (e.g., reducing CPU frequency, limiting network activity), which are already captured by other terms in the model. Therefore, $P_{mode}$ represents additional energy-saving mechanisms. Power Saving Mode may disable unnecessary sensors, reduce refresh rates, and optimize memory management, while Flight Mode directly powers down RF modules. The model is:
+        \begin{equation}
+            \label{eq:P_mode}
+            P_{mode} = \alpha_E \cdot E + \alpha_F \cdot F
         \end{equation}
         where $E$ and $F$ are indicators for Power Saving Mode and Flight Mode, respectively. Expectedly, $\alpha_E \leq 0$ and $\alpha_F \leq 0$.
 
         \subsubsection{Parameter Estimation and Validation}
-        We performed physically constrained regression using the L-BFGS-B optimizer on normalized and binarized data, enforcing non-negative coefficients for power components and non-positive coefficients for power-saving modes. Substituting the estimated parameters yields the final empirical model:
-        \begin{equation}\label{eq:final_model}
+        We performed physically constrained regression using the L-BFGS-B optimizer on normalized and binarized data, enforcing non-negative coefficients 
+        for power components and non-positive coefficients for power-saving modes. Substituting the estimated parameters yields the final empirical model:
+        \begin{equation}
+            \label{eq:final_model}
             \boxed{\begin{aligned}
-                P_{\text{total}} &= 0.250S + 0.615S\frac{B}{255} + 0.860U + 1.125f_{\text{big}}^{2.5} + 0.650f_{\text{small}}^{2.5} \\
+                P_{total} &= 0.250S + 0.615S\frac{B}{255} + 0.860U + 1.125f_{big}^{2.5} + 0.650f_{small}^{2.5} \\
                 &\quad + 0.696M + 0.040G + 0.397A - 0.068E - 0.028F
             \end{aligned}}
         \end{equation}
 
         Subsequently, we can analyze the contribution rate of each parameter and evaluate the model's performance.
+
+        %TODO: text font change
 
         \begin{figure}[H]
             \centering
@@ -164,12 +187,16 @@
         \subsubsection{Usage Scenario Simulation}
         The model allows us to estimate the smartphone's power consumption under various typical usage scenarios.
 
+        %TODO: replace figure with table
+
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.9\linewidth]{usage_scenarios_table.png}
             \caption{Power consumption under different usage scenarios}
             \label{fig:usage_scenarios}
         \end{figure}
+
+        %TODO: Conclusions from usage scenarios
 
     \subsection{Heat Transfer Model in High-Performance Scenarios}
         In this chapter, we discuss how the heat that battery generates affacts the temperature of battery itself, and in turn impacts its own 

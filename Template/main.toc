@@ -9,12 +9,12 @@
 \contentsline {subsection}{\numberline {2.1}Assumptions}{7}{subsection.0.2.1}%
 \contentsline {subsection}{\numberline {2.2}Temperature Behavior of Battery}{8}{subsection.0.2.2}%
 \contentsline {subsection}{\numberline {2.3}Battery in Different Work Loads}{9}{subsection.0.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Screen Power $P_{\text {screen}}$}{10}{subsubsection.0.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}CPU Power $P_{\text {CPU}}$}{10}{subsubsection.0.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}Network Power $P_{\text {network}}$}{10}{subsubsection.0.2.3.3}%
-\contentsline {subsubsection}{\numberline {2.3.4}GPS Power $P_{\text {GPS}}$}{11}{subsubsection.0.2.3.4}%
-\contentsline {subsubsection}{\numberline {2.3.5}Audio Power $P_{\text {audio}}$}{11}{subsubsection.0.2.3.5}%
-\contentsline {subsubsection}{\numberline {2.3.6}System Mode Power Adjustment $P_{\text {mode}}$}{11}{subsubsection.0.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.1}Screen Power $P_{screen}$}{10}{subsubsection.0.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}CPU Power $P_{CPU}$}{10}{subsubsection.0.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Network Power $P_{network}$}{10}{subsubsection.0.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}GPS Power $P_{GPS}$}{11}{subsubsection.0.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}Audio Power $P_{audio}$}{11}{subsubsection.0.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}System Mode Power Adjustment $P_{mode}$}{11}{subsubsection.0.2.3.6}%
 \contentsline {subsubsection}{\numberline {2.3.7}Parameter Estimation and Validation}{11}{subsubsection.0.2.3.7}%
 \contentsline {subsubsection}{\numberline {2.3.8}Usage Scenario Simulation}{12}{subsubsection.0.2.3.8}%
 \contentsline {subsection}{\numberline {2.4}Heat Transfer Model in High-Performance Scenarios}{13}{subsection.0.2.4}%
