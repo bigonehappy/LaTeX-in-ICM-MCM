@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  2 FEB 2026 14:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  2 FEB 2026 14:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1283,33 +1283,33 @@ Overfull \hbox (5.38364pt too wide) in paragraph at lines 150--152
 <img/power_model_coefficients.png, id=301, 424.2249pt x 351.714pt>
 File: img/power_model_coefficients.png Graphic file (type png)
 <use img/power_model_coefficients.png>
-Package pdftex.def Info: img/power_model_coefficients.png  used on input line 183.
+Package pdftex.def Info: img/power_model_coefficients.png  used on input line 181.
 (pdftex.def)             Requested size: 218.51521pt x 181.16425pt.
 <img/power_model_contribution.png, id=302, 424.2249pt x 351.4731pt>
 File: img/power_model_contribution.png Graphic file (type png)
 <use img/power_model_contribution.png>
-Package pdftex.def Info: img/power_model_contribution.png  used on input line 188.
+Package pdftex.def Info: img/power_model_contribution.png  used on input line 185.
 (pdftex.def)             Requested size: 218.51521pt x 181.04016pt.
 <img/power_model_prediction.png, id=303, 423.7431pt x 351.714pt>
 File: img/power_model_prediction.png Graphic file (type png)
 <use img/power_model_prediction.png>
-Package pdftex.def Info: img/power_model_prediction.png  used on input line 195.
+Package pdftex.def Info: img/power_model_prediction.png  used on input line 191.
 (pdftex.def)             Requested size: 218.51521pt x 181.37355pt.
 <img/power_model_residuals.png, id=304, 423.7431pt x 351.714pt>
 File: img/power_model_residuals.png Graphic file (type png)
 <use img/power_model_residuals.png>
-Package pdftex.def Info: img/power_model_residuals.png  used on input line 200.
+Package pdftex.def Info: img/power_model_residuals.png  used on input line 195.
 (pdftex.def)             Requested size: 218.51521pt x 181.37355pt.
 [11] [12 <./img/power_model_coefficients.png> <./img/power_model_contribution.png> <./img/power_model_prediction.png> <./img/power_model_residuals.png>]
-<img/depletion_time_thermal_heatmap.png, id=329, 598.8774pt x 534.3162pt>
+<img/depletion_time_thermal_heatmap.png, id=328, 598.8774pt x 534.3162pt>
 File: img/depletion_time_thermal_heatmap.png Graphic file (type png)
 <use img/depletion_time_thermal_heatmap.png>
-Package pdftex.def Info: img/depletion_time_thermal_heatmap.png  used on input line 281.
+Package pdftex.def Info: img/depletion_time_thermal_heatmap.png  used on input line 277.
 (pdftex.def)             Requested size: 204.85846pt x 182.7739pt.
-<img/max_temperature_thermal_heatmap.png, id=330, 592.614pt x 534.3162pt>
+<img/max_temperature_thermal_heatmap.png, id=329, 592.614pt x 534.3162pt>
 File: img/max_temperature_thermal_heatmap.png Graphic file (type png)
 <use img/max_temperature_thermal_heatmap.png>
-Package pdftex.def Info: img/max_temperature_thermal_heatmap.png  used on input line 285.
+Package pdftex.def Info: img/max_temperature_thermal_heatmap.png  used on input line 281.
 (pdftex.def)             Requested size: 204.85846pt x 184.70616pt.
  [13]) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) [14 <./img/depletion_time_thermal_heatmap.png> <./img/max_temperature_thermal_heatmap.png>] (./7-appendix.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--13
@@ -1495,7 +1495,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  98i,13n,108p,760b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (18 pages, 2666667 bytes).
+Output written on main.pdf (18 pages, 2667144 bytes).
 PDF statistics:
  484 PDF objects out of 1000 (max. 8388607)
  382 compressed objects within 4 object streams

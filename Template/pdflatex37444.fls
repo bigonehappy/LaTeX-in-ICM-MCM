@@ -1,0 +1,5 @@
+PWD d:/Codes/Py/美赛/论文/LaTeX-in-ICM-MCM/Template
+INPUT c:/texlive/2025/texmf.cnf
+INPUT c:/texlive/2025/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT d:/Codes/Py/美赛/论文/LaTeX-in-ICM-MCM/Template/main.tex

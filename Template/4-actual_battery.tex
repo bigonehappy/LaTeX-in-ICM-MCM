@@ -173,36 +173,32 @@
             \end{aligned}}
         \end{equation}
 
-        Subsequently, we can analyze the contribution rate of each parameter and evaluate the model's performance.
-
-        %TODO: text font change
+        Subsequently, we can analyze the contribution rate of each parameter and evaluate the model's performance. The following figure illustrates the fitting results and validation:
 
         \begin{figure}[H]
             \centering
             \begin{subfigure}{0.48\textwidth}
                 \includegraphics[width=\linewidth]{power_model_coefficients.png}
-                \caption{Model parameter coefficients}
             \end{subfigure}
             \hfill
             \begin{subfigure}{0.48\textwidth}
                 \includegraphics[width=\linewidth]{power_model_contribution.png}
-                \caption{Average power contribution}
             \end{subfigure}
             
             \vspace{0.5em}
             
             \begin{subfigure}{0.48\textwidth}
                 \includegraphics[width=\linewidth]{power_model_prediction.png}
-                \caption{Model prediction vs actual}
             \end{subfigure}
             \hfill
             \begin{subfigure}{0.48\textwidth}
                 \includegraphics[width=\linewidth]{power_model_residuals.png}
-                \caption{Residual distribution}
             \end{subfigure}
             \caption{Power consumption model fitting results and validation}
             \label{fig:power_model_fitting}
         \end{figure}
+
+        Results demonstrate that the white-box power model constructed based on the real-world smartphone dataset achieves satisfactory prediction performance, with an $R^2$ of 0.606, an MAE of 0.355 W, and an RMSE of 0.461 W. The model is able to explain over 60\% of the variance in power consumption. Among the factors analyzed, CPU usage and data network activity exhibit the most significant impact on power draw, whereas GPS consumption and the energy-saving effects of the two included modes show relatively minor influence.
 
         \subsubsection{Usage Scenario Simulation}
         The model allows us to estimate the smartphone's power consumption under various typical usage scenarios. Here are some typical scenarios and 
