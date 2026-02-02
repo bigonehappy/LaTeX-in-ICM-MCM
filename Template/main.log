@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  3 FEB 2026 03:29
 =======
 This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  3 FEB 2026 02:57
@@ -7,6 +8,9 @@ This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded forma
 =======
 This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  3 FEB 2026 03:17
 >>>>>>> 803166c (add question answers)
+=======
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  3 FEB 2026 03:19
+>>>>>>> f8d8c7e (description about Biot number)
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1449,7 +1453,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  36902 strings out of 476720
  727865 string characters out of 5801445
- 1945842 words of memory out of 5000000
+ 1946842 words of memory out of 5000000
  58231 multiletter control sequences out of 15000+600000
  579602 words of font info for 80 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
