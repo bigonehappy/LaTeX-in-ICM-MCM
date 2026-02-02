@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 17:12
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 17:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1180,7 +1180,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 5.
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ) [3
 
-]
+] [4]
 File: img/fitting_OCV.png Graphic file (type bmp)
 <img/fitting_OCV.png>
 File: img/fitting_R0.png Graphic file (type bmp)
@@ -1193,17 +1193,16 @@ File: img/fitting_C2.png Graphic file (type bmp)
 <img/fitting_C2.png>
 File: img/fitting_R2.png Graphic file (type bmp)
 <img/fitting_R2.png>
- [4] [5]
+ [5] [6]
 File: img/ci_soc_profile.png Graphic file (type bmp)
 <img/ci_soc_profile.png>
 File: img/ci_voltage_profile.png Graphic file (type bmp)
 <img/ci_voltage_profile.png>
- [6]
 File: img/cp_soc_profile.png Graphic file (type bmp)
 <img/cp_soc_profile.png>
 File: img/cp_voltage_profile.png Graphic file (type bmp)
 <img/cp_voltage_profile.png>
-) (./4-actual_battery.tex [7]
+ [7]) (./4-actual_battery.tex [8]
 File: img/3d_surface_R0.png Graphic file (type bmp)
 <img/3d_surface_R0.png>
 File: img/3d_surface_R1.png Graphic file (type bmp)
@@ -1212,21 +1211,22 @@ File: img/3d_surface_R2.png Graphic file (type bmp)
 <img/3d_surface_R2.png>
 File: img/depletion_time_heatmap.png Graphic file (type bmp)
 <img/depletion_time_heatmap.png>
- [8]
+
 Overfull \hbox (3.09038pt too wide) in paragraph at lines 60--63
 \T1/ppl/m/n/12 tem-per-a-ture im-proves bat-tery short-term per-for-mance, it also ac-cel-er-ates bat-tery degra-
  []
 
-[9]
+[9] [10]
 Overfull \hbox (0.76605pt too wide) in paragraph at lines 128--132
 \T1/ppl/m/n/12 me-ters for cel-lu-lar net-works, rel-a-tively high trans-mit power is re-quired (typ-i-cally $\OT1/cmr/m/n/12 200 \OMS/cmsy/m/n/12 ^^X
  []
 
-[10]
+
 Overfull \hbox (5.38364pt too wide) in paragraph at lines 150--152
 \T1/ppl/m/n/12 an au-dio DSP, digital-to-analog con-ver-sion (DAC), and driv-ing speak-ers or head-phones.
  []
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <img/power_model_coefficients.png, id=347, 424.2249pt x 351.714pt>
@@ -1268,6 +1268,9 @@ Package pdftex.def Info: img/max_temperature_thermal_heatmap.png  used on input 
 =======
 =======
 >>>>>>> 5b12517 (add numerical disturbance to resistance)
+=======
+[11]
+>>>>>>> 7460a98 (add description about open-circuit)
 File: img/power_model_coefficients.png Graphic file (type bmp)
 <img/power_model_coefficients.png>
 File: img/power_model_contribution.png Graphic file (type bmp)
@@ -1276,22 +1279,22 @@ File: img/power_model_prediction.png Graphic file (type bmp)
 <img/power_model_prediction.png>
 File: img/power_model_residuals.png Graphic file (type bmp)
 <img/power_model_residuals.png>
-[11] [12]
+ [12] [13]
 File: img/depletion_time_thermal_heatmap.png Graphic file (type bmp)
 <img/depletion_time_thermal_heatmap.png>
 File: img/max_temperature_thermal_heatmap.png Graphic file (type bmp)
 <img/max_temperature_thermal_heatmap.png>
- [13]) (./5-sensitivity_analysis.tex
+ [14]) (./5-sensitivity_analysis.tex
 File: img/voltage_error_comparison.png Graphic file (type bmp)
 <img/voltage_error_comparison.png>
- [14]
+ [15]
 File: img/sensitivity_error_R0.png Graphic file (type bmp)
 <img/sensitivity_error_R0.png>
 File: img/sensitivity_error_R1.png Graphic file (type bmp)
 <img/sensitivity_error_R1.png>
 File: img/sensitivity_error_R2.png Graphic file (type bmp)
 <img/sensitivity_error_R2.png>
- [15]) (./6-recommendations.tex) [16] (./7-appendix.tex
+ [16]) (./6-recommendations.tex) [17] (./7-appendix.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--13
 []|\T1/ppl/m/n/12 Internal Re-sis-
  []
@@ -1371,7 +1374,7 @@ Underfull \hbox (badness 1331) in paragraph at lines 54--54
 []|\T1/ppl/m/n/12 Power con-sump-tion of dis-
  []
 
-[17]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 74--74
 []|\T1/ppl/m/n/12 Big Core Fre-
  []
@@ -1411,7 +1414,7 @@ Underfull \hbox (badness 1558) in paragraph at lines 112--112
 []|\T1/ppl/m/n/12 GPS Power Co-
  []
 
-[18]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 128--128
 []|\T1/ppl/m/n/12 Audio Power
  []
@@ -1451,11 +1454,12 @@ Overfull \hbox (15.04318pt too wide) in paragraph at lines 170--171
 []|\T1/ppl/m/n/12 Dimensionless| 
  []
 
-[19]
+[20]
 Underfull \hbox (badness 3679) in paragraph at lines 186--186
 []|\T1/ppl/m/n/12 Maximum Tem-
  []
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 ) (./8-references.tex) (./9-ai_use_report.tex [18]
@@ -1479,6 +1483,21 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 =======
 ) (./8-references.tex) (./9-ai_use_report.tex) [20] 
 >>>>>>> 5b12517 (add numerical disturbance to resistance)
+=======
+) (./8-references.tex) (./9-ai_use_report.tex [21]
+Overfull \hbox (18.0433pt too wide) in paragraph at lines 24--25
+\T1/ppl/b/n/12 Team's Con-tri-bu-tion: \T1/ppl/m/n/12 Fol-low-ing this ad-vice, we searched for smartphone-specific datasets
+ []
+
+[22] (d:/TexLive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+) [23]
+Overfull \hbox (38.7541pt too wide) in paragraph at lines 135--146
+ [][] 
+ []
+
+[24]) [25] 
+>>>>>>> 7460a98 (add description about open-circuit)
 enddocument/afterlastpage: lastpage setting LastPage.
 >>>>>>> 73006b8 (add basic data for sensitivity analysis)
 (./main.aux)
@@ -1542,16 +1561,22 @@ PDF statistics:
  719045 string characters out of 5801445
 =======
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F77DB952279B851A747ECEA5C497C6D8;7056.
+(rerunfilecheck)             Checksum: A1E9AD12318E9C07BF4A3EDB9F9F86EC;8881.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  36529 strings out of 476720
  720557 string characters out of 5801445
 >>>>>>> 5b12517 (add numerical disturbance to resistance)
+=======
+ 36780 strings out of 476720
+ 724223 string characters out of 5801445
+>>>>>>> 7460a98 (add description about open-circuit)
  1939842 words of memory out of 5000000
- 57864 multiletter control sequences out of 15000+600000
- 581980 words of font info for 81 fonts, out of 8000000 for 9000
+ 58113 multiletter control sequences out of 15000+600000
+ 582302 words of font info for 82 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
+<<<<<<< HEAD
 <<<<<<< HEAD
  94i,13n,107p,688b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
 >>>>>>> a9e8894 (add basic data for sensitivity analysis)
@@ -1559,5 +1584,8 @@ Here is how much of TeX's memory you used:
 =======
  94i,13n,107p,766b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
 >>>>>>> 5b12517 (add numerical disturbance to resistance)
+=======
+ 94i,13n,107p,766b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
+>>>>>>> 7460a98 (add description about open-circuit)
 
-Output written on main.pdf (20 pages).
+Output written on main.pdf (25 pages).

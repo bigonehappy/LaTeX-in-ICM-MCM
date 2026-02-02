@@ -78,6 +78,31 @@
             I
         \end{equation}
         where $R_0, R_1, R_2, C_1, C_2, Q_{max}$ are the model parameters that need to be estimated.
+
+        However, if the battery is in an open-circuit state, the structure of the circuit will change:
+
+        %TODO: open-circuit figure
+
+        In that case, since $I = 0$, there is no voltage drop across $R_0$, so the terminal voltage $U_t$ is expressed by:
+        \begin{equation}
+            \label{Open-circuit terminal voltage}
+            U_t = U_{OC} - U_1 - U_2
+        \end{equation}
+
+        Both of the capactors $C_1, C_2$ will slowly discharge through their respective resistors $R_1, R_2$, expressed as:
+        \begin{equation}
+            \label{Open-circuit RC equation}
+            \frac{\mathrm{d}U_1}{\mathrm{d}t} = -\frac{U_1}{R_1 C_1}, \quad
+            \frac{\mathrm{d}U_2}{\mathrm{d}t} = -\frac{U_2}{R_2 C_2}
+        \end{equation}
+
+        Combining \eqref{Open-circuit terminal voltage} and \eqref{Open-circuit RC equation}, we can get the analytic solution:
+        \begin{equation}
+            \label{Open-circuit terminal voltage solution}
+            U_t = U_{OC} - U_{1, init} e^{-\dfrac{t}{R_1 C_1}} - U_{2, init} e^{-\dfrac{t}{R_2 C_2}}
+        \end{equation}
+        where $U_{1, init}, U_{2, init}$ are the initial voltages across $C_1, C_2$ at the start of the open-circuit state.
+
     \subsection{Parameter Estimation}
         The Hybrid Pulse Power Characterization (HPPC) test is commonly used for this purpose. The test is conducted with steps as follows:
         \begin{enumerate}
@@ -88,6 +113,8 @@
             \item Repeat steps 2 and 3 until the battery reaches a low SoC point (e.g., $10\%$) or the maximum discharge limit the manufacturer specifies.
             \item If needed, repeat similar steps for charging pulses.
         \end{enumerate}
+        The resting step between pulses allows the exponential term in equation \eqref{Open-circuit terminal voltage solution} to decay to zero, so 
+        accurate $U_{OC}$ can be obtained.
 
         With HPPC data, the model parameters can be estimated through curve fitting techniques. The process are as follows:
         \begin{itemize}
