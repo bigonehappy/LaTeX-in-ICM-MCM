@@ -157,7 +157,7 @@
 
 \input{new_command.tex} %载入新命令
 %\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}} %
-\title{Better Battery Usage \\ From the Insights of Modeling}  % 标题
+\title{Better Battery Usage: \\ From the Insights of Modeling}  % 标题
 
 % 如需要修改题头（默认为 MCM/ICM），请使用以下命令（此处修改为 MCM）
 %\renewcommand{\contest}{MCM}
@@ -171,31 +171,31 @@
 
     It is widely complained that smartphone battery level is inaccurate and drains too fast during daily use. Actually, smartphone Li-ion batteries are 
     complex electrochemical systems influenced by various factors, such as temperature, power demand, and device heating. To optimize battery usage and
-    extend battery life, it is crucial to understand how these factors affect battery performance. In this paper, we develop a equivalent model to analyze
-    and predict the performance of Li-Ion batteries in smartphones under various operating conditions.
+    extend battery life, it is crucial to understand how these factors affect battery performance. In this paper, we develop an equivalent model to 
+    analyze and predict the performance of Li-ion batteries in smartphones under various operating conditions.
 
-    We start by constructing a simplest reasonable model based on ideal battery assumptions, which provides a foundational understanding of battery 
-    behavior. An 2-order Thevenin model is build without considering temperature, power demand, smartphone heating and other factors. Then dataset from 
-    related HPPC tests are used to identify the model parameters. Because the differential equation can not be solved analytically, numerical methods are 
-    employed to validated the model, showing logical and intuitive results.
+    We started by constructing a simplest reasonable model based on ideal battery assumptions, which provides a foundational understanding of battery 
+    behavior. A 2-order Thevenin model is built without considering temperature, power demand, smartphone heating and other factors. Then dataset from 
+    related HPPC tests are used to identify the model parameters. Because the differential equation could not be solved analytically, numerical methods are 
+    employed to validate the model, showing logical and intuitive results.
 
-    Next, we refine the model by incorporating real-world factors. The Arrhenius equation is introduced to account for temperature effects on battery 
+    Next, we refined the model by incorporating real-world factors. The Arrhenius equation is introduced to account for temperature effects on battery 
     performance. It is observed that the internal resistance increases exponentially with decreasing temperature, leading to higher voltage drops under 
-    load. We also consider the decomposition of smartphone power consumption, revealing that components like the data network and CPU significantly impact 
-    battery drain. With these results, we further analyze smartphones' self-heating effect during operation, which in turn affects battery temperature and
-    performance. All of the results above should answer Question 1 and Question 2.
+    load. We also considered the decomposition of smartphone power consumption, revealing that components like the data network and CPU significantly impact 
+    battery drain. With these results, we further analyzed smartphones' self-heating effect during operation, which in turn affects battery temperature and
+    performance. All of the results above should answer Problem 1 and Problem 2.
 
-    Then, a sensitivity analysis is conducted to identify the most influential parameters affecting battery life and performance. It has not escaped our 
-    eyes that $SOC$-dependent(so time-dependent) parameters, such as internal resistance and capacity, capture the suddenly degradation behavior of 
-    batteries at low $SOC$ state. Simply setting those parameters as constants may lead to significant errors in long-term predictions. We also apply 
+    Then, a sensitivity analysis was conducted to identify the most influential parameters affecting battery life and performance. It has not escaped our 
+    eyes that $SOC$-dependent(so time-dependent) parameters, such as internal resistance and capacity, capture the sudden degradation behavior of 
+    batteries at low $SOC$. Simply setting those parameters as constants may lead to significant errors in long-term predictions. We also applied 
     numerical distribution to parameters, quantifying the uncertainty in model outputs due to parameter variability in different scenarios. This part 
-    should answer Question 3.
+    should answer Problem 3.
 
-    Finally, based on the insights gained from our modeling and analysis, we provide practical recommendations for optimizing battery usage in smartphones.
-    This part should answer Question 4.
+    Finally, based on the insights gained from our modeling and analysis, we provided practical recommendations for optimizing battery usage in smartphones.
+    This part should answer Problem 4.
 
     \vspace{5pt}  %mm	毫米	1 mm = 2.845 pt   pt 点	1 pt = 0.351 mm
-    \textbf{Keywords: Smartphone; Li-Ion Battery; 2-Order Thevenin Model; Arrhenius Equation; Sensitivity Analysis}
+    \textbf{Keywords: Smartphone; Li-ion Battery; 2-Order Thevenin Model; Arrhenius Equation; Sensitivity Analysis}
 
 \end{abstract}
 \maketitle  % 生成 Summary Sheet

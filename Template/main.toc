@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {2.1}Assumptions}{5}{subsection.0.2.1}%
 \contentsline {subsection}{\numberline {2.2}Thevenin Model}{5}{subsection.0.2.2}%
 \contentsline {subsection}{\numberline {2.3}Parameter Estimation}{7}{subsection.0.2.3}%
-\contentsline {subsection}{\numberline {2.4}Simulations}{10}{subsection.0.2.4}%
+\contentsline {subsection}{\numberline {2.4}Simulations}{9}{subsection.0.2.4}%
 \contentsline {subsubsection}{\numberline {2.4.1}Constant current}{10}{subsubsection.0.2.4.1}%
 \contentsline {subsubsection}{\numberline {2.4.2}Constant power}{10}{subsubsection.0.2.4.2}%
 \contentsline {section}{\numberline {3}Actual Battery}{11}{section.0.3}%
@@ -21,16 +21,16 @@
 \contentsline {subsubsection}{\numberline {3.3.6}System Mode Power Adjustment}{15}{subsubsection.0.3.3.6}%
 \contentsline {subsubsection}{\numberline {3.3.7}Parameter Estimation and Validation}{15}{subsubsection.0.3.3.7}%
 \contentsline {subsubsection}{\numberline {3.3.8}Usage Scenario Simulation}{16}{subsubsection.0.3.3.8}%
-\contentsline {subsection}{\numberline {3.4}Heat Transfer Model in High-Performance Scenarios}{17}{subsection.0.3.4}%
+\contentsline {subsection}{\numberline {3.4}Heat Transfer Model in High-Performance Scenarios}{16}{subsection.0.3.4}%
 \contentsline {section}{\numberline {4}Sensitivity Analysis}{18}{section.0.4}%
 \contentsline {subsection}{\numberline {4.1}Time-Varying Properties}{18}{subsection.0.4.1}%
-\contentsline {subsection}{\numberline {4.2}Numerical Accuracy}{19}{subsection.0.4.2}%
+\contentsline {subsection}{\numberline {4.2}Numerical Accuracy}{18}{subsection.0.4.2}%
 \contentsline {section}{\numberline {5}User Recommendations}{20}{section.0.5}%
 \contentsline {subsection}{\numberline {5.1}Short-Term Recommendations: Extending Battery Runtime}{20}{subsection.0.5.1}%
 \contentsline {subsection}{\numberline {5.2}Long-Term Recommendations: Maximizing Battery Lifespan}{21}{subsection.0.5.2}%
 \contentsline {section}{\numberline {6}Further Discussions}{22}{section.0.6}%
 \contentsline {subsection}{\numberline {6.1}Strength}{22}{subsection.0.6.1}%
-\contentsline {subsection}{\numberline {6.2}Weakness}{23}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {6.2}Weakness}{22}{subsection.0.6.2}%
 \contentsline {subsection}{\numberline {6.3}Future Work}{23}{subsection.0.6.3}%
 \contentsline {section}{\numberline {A}Notation}{24}{appendix.A}%
 \contentsline {section}{References}{26}{appendix.B}%
