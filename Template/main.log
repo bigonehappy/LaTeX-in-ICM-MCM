@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 23:46
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  3 FEB 2026 00:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1153,24 +1153,16 @@ Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 
 Package chemgreek Info: Activating mapping `default' on line 167.
 
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 176.
- (d:/TexLive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
-)
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 176.
- (d:/TexLive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [1
-
-] (./main.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 187.
  (d:/TexLive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 187.
  (d:/TexLive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [1
+
+] (./main.toc)
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1281,11 +1273,15 @@ File: img/power_saving_effects.pdf Graphic file (type pdf)
 File: img/battery_lifespan_users.pdf Graphic file (type pdf)
 <use img/battery_lifespan_users.pdf>
 [20])
-Overfull \hbox (1.87892pt too wide) in paragraph at lines 64--191
+Overfull \hbox (1.87892pt too wide) in paragraph at lines 64--208
 []\T1/ppl/m/n/12 By com-bin-ing short-term power man-age-ment with long-term health prac-tices, users
  []
 
 [21] (./7-appendix.tex [22]) (./8-references.tex [23]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 9.
+ (d:/TexLive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 Underfull \hbox (badness 1184) in paragraph at lines 13--17
 []\T1/ppl/m/n/12 Ouyang, Q., Chen, J., & Zheng, J. (2023). State of Charge Es-ti-ma-tion for
  []
@@ -1320,11 +1316,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 3BE22C1C1829414AD5D1E464D9782BF1;7886.
  ) 
 Here is how much of TeX's memory you used:
- 36934 strings out of 476720
- 727980 string characters out of 5801445
- 1943842 words of memory out of 5000000
- 58259 multiletter control sequences out of 15000+600000
- 582302 words of font info for 82 fonts, out of 8000000 for 9000
+ 36881 strings out of 476720
+ 727290 string characters out of 5801445
+ 1945842 words of memory out of 5000000
+ 58211 multiletter control sequences out of 15000+600000
+ 579602 words of font info for 80 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  94i,14n,107p,766b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
