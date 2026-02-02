@@ -33,14 +33,14 @@ Based on these results, we briefly summarize the power-saving actions:
 
 \subsection{Long-Term Recommendations: Maximizing Battery Lifespan}
 
-Battery capacity degrades over charge-discharge cycles. We adopt a simplified linear aging model:
+Battery capacity degrades over charge-discharge cycles~\cite{battery_aging}. We adopt a simplified linear aging model:
 \begin{equation}
 Q(n) = Q_0 \cdot (1 - \alpha \cdot n)
 \label{eq:aging}
 \end{equation}
 where $n$ is the number of full equivalent cycles and $\alpha$ is the capacity fade rate per cycle.
 
-Using the NASA Battery Dataset, we fitted $\alpha = 0.000411$ per cycle ($R^2 = 0.97$), indicating 0.041\% capacity loss per cycle. At 500 cycles, capacity retention is approximately 79.5\%, consistent with the industry standard of 80\% end-of-life threshold.
+Using the NASA Li-ion Battery Aging Dataset~\cite{nasa_dataset}, we fitted $\alpha = 0.000411$ per cycle ($R^2 = 0.97$), indicating 0.041\% capacity loss per cycle. At 500 cycles, capacity retention is approximately 79.5\%, consistent with the industry standard of 80\% end-of-life threshold.
 
 Figure~\ref{fig:lifespan} shows the time required for different user types to reach various capacity thresholds, based on their daily energy consumption patterns.
 

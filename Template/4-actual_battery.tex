@@ -16,7 +16,7 @@
 
     \subsection{Temperature Behavior of Battery}
         Actual battery behavior is significantly influenced by temperature variations. The most common parameter affected by temperature is the internal 
-        resistance. Using the Arrhenius' equation, we can model the temperature dependence of internal resistance as follows:
+        resistance. Using the Arrhenius equation, we can model the temperature dependence of internal resistance as follows:
         \begin{equation}
             R = R_0 \cdot e^{\dfrac{E_a}{R_u T}}
         \end{equation}
@@ -27,7 +27,7 @@
             \ln R  = \frac{E_a}{R_u} \cdot \dfrac{1}{T} + \ln R_0
         \end{equation}
 
-        The Samsung INR21700 30T 3Ah Li-ion Battery Dataset contains experimental data at various temperatures. Using this dataset again, we perform a 
+        The Samsung INR21700 30T 3Ah Li-ion Battery Dataset~\cite{samsung_dataset} contains experimental data at various temperatures. Using this dataset, we perform a 
         linear regression, yielding the following results:
 
         \begin{figure}[H]
@@ -85,8 +85,8 @@
             P_{total} = P_{screen} + P_{CPU} + P_{network} + P_{GPS} + P_{audio} + P_{mode}
         \end{equation}
 
-        By utilizing acquired smartphone state data, we estimate the parameters within these models, thereby obtaining a comprehensive power consumption 
-        model for complex usage scenarios.  %TODO: Reference to dataset
+        By utilizing acquired smartphone state data~\cite{android_dataset}, we estimate the parameters within these models, thereby obtaining a comprehensive power consumption 
+        model for complex usage scenarios.
 
         \subsubsection{Screen Power}
         When the screen is on, it exhibits a base power draw plus a near-linear OLED power component (the modeling here assumes an OLED display):
