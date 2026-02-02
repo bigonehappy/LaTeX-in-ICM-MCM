@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 14:10
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 17:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1140,12 +1140,8 @@ Package hyperref Info: Link coloring ON on input line 167.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 \c@lstlisting=\count387
-(d:/TexLive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+ (d:/TexLive/2024/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (d:/TexLive/2024/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
 Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
@@ -1185,82 +1181,6 @@ File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ) [3
 
 ]
-<<<<<<< HEAD
-<img/fitting_OCV.png, id=249, 425.9112pt x 353.6412pt>
-File: img/fitting_OCV.png Graphic file (type png)
-<use img/fitting_OCV.png>
-Package pdftex.def Info: img/fitting_OCV.png  used on input line 132.
-(pdftex.def)             Requested size: 204.85846pt x 170.09659pt.
-<img/fitting_R0.png, id=251, 424.9476pt x 353.6412pt>
-File: img/fitting_R0.png Graphic file (type png)
-<use img/fitting_R0.png>
-Package pdftex.def Info: img/fitting_R0.png  used on input line 137.
-(pdftex.def)             Requested size: 204.85846pt x 170.4851pt.
-<img/fitting_C1.png, id=252, 425.9112pt x 353.6412pt>
-File: img/fitting_C1.png Graphic file (type png)
-<use img/fitting_C1.png>
-Package pdftex.def Info: img/fitting_C1.png  used on input line 142.
-(pdftex.def)             Requested size: 204.85846pt x 170.09659pt.
-<img/fitting_R1.png, id=253, 424.9476pt x 353.6412pt>
-File: img/fitting_R1.png Graphic file (type png)
-<use img/fitting_R1.png>
-Package pdftex.def Info: img/fitting_R1.png  used on input line 147.
-(pdftex.def)             Requested size: 204.85846pt x 170.4851pt.
-<img/fitting_C2.png, id=254, 425.9112pt x 353.6412pt>
-File: img/fitting_C2.png Graphic file (type png)
-<use img/fitting_C2.png>
-Package pdftex.def Info: img/fitting_C2.png  used on input line 152.
-(pdftex.def)             Requested size: 204.85846pt x 170.09659pt.
-<img/fitting_R2.png, id=255, 424.9476pt x 353.6412pt>
-File: img/fitting_R2.png Graphic file (type png)
-<use img/fitting_R2.png>
-Package pdftex.def Info: img/fitting_R2.png  used on input line 157.
-(pdftex.def)             Requested size: 204.85846pt x 170.4851pt.
- [4] [5 <./img/fitting_OCV.png> <./img/fitting_R0.png> <./img/fitting_C1.png> <./img/fitting_R1.png> <./img/fitting_C2.png> <./img/fitting_R2.png>]
-<img/ci_soc_profile.png, id=286, 425.4294pt x 353.1594pt>
-File: img/ci_soc_profile.png Graphic file (type png)
-<use img/ci_soc_profile.png>
-Package pdftex.def Info: img/ci_soc_profile.png  used on input line 195.
-(pdftex.def)             Requested size: 204.85846pt x 170.05884pt.
-<img/ci_voltage_profile.png, id=287, 425.4294pt x 353.1594pt>
-File: img/ci_voltage_profile.png Graphic file (type png)
-<use img/ci_voltage_profile.png>
-Package pdftex.def Info: img/ci_voltage_profile.png  used on input line 200.
-(pdftex.def)             Requested size: 204.85846pt x 170.05884pt.
- [6 <./img/ci_soc_profile.png> <./img/ci_voltage_profile.png>]
-<img/cp_soc_profile.png, id=297, 425.4294pt x 353.1594pt>
-File: img/cp_soc_profile.png Graphic file (type png)
-<use img/cp_soc_profile.png>
-Package pdftex.def Info: img/cp_soc_profile.png  used on input line 220.
-(pdftex.def)             Requested size: 204.85846pt x 170.05884pt.
-<img/cp_voltage_profile.png, id=298, 425.4294pt x 353.1594pt>
-File: img/cp_voltage_profile.png Graphic file (type png)
-<use img/cp_voltage_profile.png>
-Package pdftex.def Info: img/cp_voltage_profile.png  used on input line 225.
-(pdftex.def)             Requested size: 204.85846pt x 170.05884pt.
-) (./4-actual_battery.tex [7 <./img/cp_soc_profile.png> <./img/cp_voltage_profile.png>]
-<img/3d_surface_R0.png, id=309, 463.2507pt x 450.9648pt>
-File: img/3d_surface_R0.png Graphic file (type png)
-<use img/3d_surface_R0.png>
-Package pdftex.def Info: img/3d_surface_R0.png  used on input line 36.
-(pdftex.def)             Requested size: 136.57462pt x 132.95088pt.
-<img/3d_surface_R1.png, id=310, 456.0237pt x 450.9648pt>
-File: img/3d_surface_R1.png Graphic file (type png)
-<use img/3d_surface_R1.png>
-Package pdftex.def Info: img/3d_surface_R1.png  used on input line 41.
-(pdftex.def)             Requested size: 136.57462pt x 135.05652pt.
-<img/3d_surface_R2.png, id=311, 459.99855pt x 450.9648pt>
-File: img/3d_surface_R2.png Graphic file (type png)
-<use img/3d_surface_R2.png>
-Package pdftex.def Info: img/3d_surface_R2.png  used on input line 46.
-(pdftex.def)             Requested size: 136.57462pt x 133.8936pt.
-<img/depletion_time_heatmap.png, id=312, 598.8774pt x 534.3162pt>
-File: img/depletion_time_heatmap.png Graphic file (type png)
-<use img/depletion_time_heatmap.png>
-Package pdftex.def Info: img/depletion_time_heatmap.png  used on input line 56.
-(pdftex.def)             Requested size: 273.14923pt x 243.70126pt.
- [8 <./img/3d_surface_R0.png> <./img/3d_surface_R1.png> <./img/3d_surface_R2.png>]
-=======
 File: img/fitting_OCV.png Graphic file (type bmp)
 <img/fitting_OCV.png>
 File: img/fitting_R0.png Graphic file (type bmp)
@@ -1293,7 +1213,6 @@ File: img/3d_surface_R2.png Graphic file (type bmp)
 File: img/depletion_time_heatmap.png Graphic file (type bmp)
 <img/depletion_time_heatmap.png>
  [8]
->>>>>>> 73006b8 (add basic data for sensitivity analysis)
 Overfull \hbox (3.09038pt too wide) in paragraph at lines 60--63
 \T1/ppl/m/n/12 tem-per-a-ture im-proves bat-tery short-term per-for-mance, it also ac-cel-er-ates bat-tery degra-
  []
@@ -1308,6 +1227,7 @@ Overfull \hbox (5.38364pt too wide) in paragraph at lines 150--152
 \T1/ppl/m/n/12 an au-dio DSP, digital-to-analog con-ver-sion (DAC), and driv-ing speak-ers or head-phones.
  []
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <img/power_model_coefficients.png, id=347, 424.2249pt x 351.714pt>
 =======
@@ -1346,6 +1266,8 @@ Package pdftex.def Info: img/max_temperature_thermal_heatmap.png  used on input 
 (pdftex.def)             Requested size: 204.85846pt x 184.70616pt.
  [13]) (./5-sensitivity_analysis.tex) (./6-recommendations.tex) [14 <./img/depletion_time_thermal_heatmap.png> <./img/max_temperature_thermal_heatmap.png>] (./7-appendix.tex
 =======
+=======
+>>>>>>> 5b12517 (add numerical disturbance to resistance)
 File: img/power_model_coefficients.png Graphic file (type bmp)
 <img/power_model_coefficients.png>
 File: img/power_model_contribution.png Graphic file (type bmp)
@@ -1360,11 +1282,16 @@ File: img/depletion_time_thermal_heatmap.png Graphic file (type bmp)
 File: img/max_temperature_thermal_heatmap.png Graphic file (type bmp)
 <img/max_temperature_thermal_heatmap.png>
  [13]) (./5-sensitivity_analysis.tex
-
-LaTeX Warning: Reference `Thevenin_model_matrix_form' on page 14 undefined on input line 4.
-
-) (./6-recommendations.tex) [14] (./7-appendix.tex
->>>>>>> a9e8894 (add basic data for sensitivity analysis)
+File: img/voltage_error_comparison.png Graphic file (type bmp)
+<img/voltage_error_comparison.png>
+ [14]
+File: img/sensitivity_error_R0.png Graphic file (type bmp)
+<img/sensitivity_error_R0.png>
+File: img/sensitivity_error_R1.png Graphic file (type bmp)
+<img/sensitivity_error_R1.png>
+File: img/sensitivity_error_R2.png Graphic file (type bmp)
+<img/sensitivity_error_R2.png>
+ [15]) (./6-recommendations.tex) [16] (./7-appendix.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--13
 []|\T1/ppl/m/n/12 Internal Re-sis-
  []
@@ -1444,7 +1371,7 @@ Underfull \hbox (badness 1331) in paragraph at lines 54--54
 []|\T1/ppl/m/n/12 Power con-sump-tion of dis-
  []
 
-[15]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 74--74
 []|\T1/ppl/m/n/12 Big Core Fre-
  []
@@ -1484,7 +1411,7 @@ Underfull \hbox (badness 1558) in paragraph at lines 112--112
 []|\T1/ppl/m/n/12 GPS Power Co-
  []
 
-[16]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 128--128
 []|\T1/ppl/m/n/12 Audio Power
  []
@@ -1524,11 +1451,12 @@ Overfull \hbox (15.04318pt too wide) in paragraph at lines 170--171
 []|\T1/ppl/m/n/12 Dimensionless| 
  []
 
-[17]
+[19]
 Underfull \hbox (badness 3679) in paragraph at lines 186--186
 []|\T1/ppl/m/n/12 Maximum Tem-
  []
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ) (./8-references.tex) (./9-ai_use_report.tex [18]
 Overfull \hbox (18.0433pt too wide) in paragraph at lines 36--37
@@ -1548,6 +1476,9 @@ Overfull \hbox (38.7541pt too wide) in paragraph at lines 147--158
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 =======
 ) (./8-references.tex) (./9-ai_use_report.tex) [18] 
+=======
+) (./8-references.tex) (./9-ai_use_report.tex) [20] 
+>>>>>>> 5b12517 (add numerical disturbance to resistance)
 enddocument/afterlastpage: lastpage setting LastPage.
 >>>>>>> 73006b8 (add basic data for sensitivity analysis)
 (./main.aux)
@@ -1555,6 +1486,7 @@ enddocument/afterlastpage: lastpage setting LastPage.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+<<<<<<< HEAD
 <<<<<<< HEAD
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 9A479C1250C1D55D6DE624E01CF33F4A;6978.
@@ -1608,12 +1540,24 @@ PDF statistics:
 =======
  36483 strings out of 476720
  719045 string characters out of 5801445
+=======
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: F77DB952279B851A747ECEA5C497C6D8;7056.
+ ) 
+Here is how much of TeX's memory you used:
+ 36529 strings out of 476720
+ 720557 string characters out of 5801445
+>>>>>>> 5b12517 (add numerical disturbance to resistance)
  1939842 words of memory out of 5000000
- 57822 multiletter control sequences out of 15000+600000
+ 57864 multiletter control sequences out of 15000+600000
  581980 words of font info for 81 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
+<<<<<<< HEAD
  94i,13n,107p,688b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
 >>>>>>> a9e8894 (add basic data for sensitivity analysis)
 >>>>>>> 73006b8 (add basic data for sensitivity analysis)
+=======
+ 94i,13n,107p,766b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
+>>>>>>> 5b12517 (add numerical disturbance to resistance)
 
-Output written on main.pdf (18 pages).
+Output written on main.pdf (20 pages).

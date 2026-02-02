@@ -3,6 +3,53 @@
         Smartphone batteries varies in capacity, voltage, and internal resistance. To understand how these variations affect the performance of the system,
         we conducted a sensitivity analysis by varying each parameter in equation \eqref{Thevenin_model_matrix_form} within realistic ranges.
 
-        \subsubsection{The Importance of Time-Varying Parameters}
+        \subsubsection{Time-Varying Properties}
         Too much simplification leads to lose of actual behavior. For example, setting $R_0, R_1, R_2, C_1, C_2$ to constants rather than parameters 
-        varies with SoC can result in inaccurate predictions. Here is the result if we simply set them as sample mean values:
+        varies with SoC can result in inaccurate predictions. Here is the error result if we simply set them as sample mean values:
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.6\textwidth]{voltage_error_comparison.png}
+            \caption{Prediction Error with Constant Electrical Parameters}
+            \label{fig:constant_params_error}
+        \end{figure}
+        As shown in Figure \ref{fig:constant_params_error}, the prediction error when SoC is low, which means the behavior that battery resistance 
+        increases with lower SoC, is not captured well. This indicates the importance of considering time-varying parameters in battery modeling for 
+        accurate predictions.
+
+        \subsubsection{Numerical Accuracy}
+
+        The calibration of electrical parameters of lithium batteries is crucial for accurate modeling and simulation. To assess the impact of numerical 
+        accuracy on the calibration results, we add $5\%, 10\%, 20\%$ disturbance seperately to the electrical parameters $R_0, R_1, R_2$ and observe the
+        resulting prediction errors in $1\text{A}$ constant current scenario. The results are shown below:
+        \begin{figure}[H]
+            \centering
+            \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{sensitivity_error_R0.png}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{sensitivity_error_R1.png}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.3\textwidth}
+                \includegraphics[width=\textwidth]{sensitivity_error_R2.png}
+            \end{subfigure}
+            \caption{Sensitivity Analysis to Resistance}
+        \end{figure}
+
+        It can be observed that:
+        \begin{itemize}
+            \item All of the disturbances lead to prediction errors when SoC is low. Considering the fact that battery resistance increases with lower 
+                  SoC, The prorpotional disturbance itself is scaled up, which leads to larger errors.
+            \item The disturbance on $R_0$ leads to the most significant prediction error, and it is almost independent of time. $R_0$ is the basic 
+                  internal resistance. It is not connected to any capacitors, so in constant current scanorio, it only affects output voltage.
+            \item The disturbances on $R_1$ and $R_2$ have similar sharp pattern at the start. This is because they are connected to capacitors, which
+                  cause transient response at the begining of discharge.
+            \item The errors caused by $R_1$ are obviously more time-dependent than those caused by $R_2$. This is because $R_1$ is associated with $C_1$, 
+                  which has a smaller time constant, leading to faster transient response. This indicates that there may be little accuracy loss if the 
+                  model is simplified to 1-order, since the accuracy of $R_1$ is more critical for capturing the dynamics of the battery than $R_2$. 
+        \end{itemize}
+
+        The capacitance effect is not significant in constant current scenario. To further analyze the impact of numerical accuracy on $C_1, C_2$, we set
+        a pulse current discharge scenario to simulate the battery behavior. The results are shown below:
+

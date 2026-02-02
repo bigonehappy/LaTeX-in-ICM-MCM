@@ -20,26 +20,18 @@
 \contentsline {subsection}{\numberline {2.4}Heat Transfer Model in High-Performance Scenarios}{13}{subsection.0.2.4}%
 \contentsline {section}{\numberline {3}Sensitivity Analysis}{14}{section.0.3}%
 \contentsline {subsection}{\numberline {3.1}Analysis of Basic Electrical Parameters}{14}{subsection.0.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}The Importance of Time-Varying Parameters}{14}{subsubsection.0.3.1.1}%
-\contentsline {section}{\numberline {A}Notation}{15}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}Battery Parameters}{15}{subsection.A.1}%
-\contentsline {subsection}{\numberline {A.2}Power Consumption Parameters}{15}{subsection.A.2}%
-\contentsline {subsubsection}{\numberline {A.2.1}Total Power Model}{15}{subsubsection.A.2.1}%
-\contentsline {subsubsection}{\numberline {A.2.2}Screen Power}{16}{subsubsection.A.2.2}%
-\contentsline {subsubsection}{\numberline {A.2.3}CPU Power}{16}{subsubsection.A.2.3}%
-\contentsline {subsubsection}{\numberline {A.2.4}Network Power}{16}{subsubsection.A.2.4}%
-\contentsline {subsubsection}{\numberline {A.2.5}GPS Power}{17}{subsubsection.A.2.5}%
-\contentsline {subsubsection}{\numberline {A.2.6}Audio Power}{17}{subsubsection.A.2.6}%
-\contentsline {subsubsection}{\numberline {A.2.7}System Mode Power Adjustment}{17}{subsubsection.A.2.7}%
-\contentsline {subsection}{\numberline {A.3}Thermal Parameters}{18}{subsection.A.3}%
-\contentsline {subsection}{\numberline {A.4}Time and Derived Quantities}{18}{subsection.A.4}%
-\contentsline {section}{\numberline {B}Use of AI}{19}{appendix.B}%
-\contentsline {subsection}{\numberline {B.1}Battery Dataset Selection}{19}{subsection.B.1}%
-\contentsline {subsection}{\numberline {B.2}Dataset Overview and Statistics}{19}{subsection.B.2}%
-\contentsline {subsection}{\numberline {B.3}Coefficient Reasonableness Analysis}{20}{subsection.B.3}%
-\contentsline {subsection}{\numberline {B.4}Data Sampling Strategy}{20}{subsection.B.4}%
-\contentsline {subsection}{\numberline {B.5}LaTeX Equation Formatting}{21}{subsection.B.5}%
-\contentsline {subsection}{\numberline {B.6}LaTeX Table Column Width Adjustment}{21}{subsection.B.6}%
-\contentsline {subsection}{\numberline {B.7}Summary of AI Usage}{22}{subsection.B.7}%
-\contentsline {subsection}{\numberline {B.8}Declaration}{22}{subsection.B.8}%
+\contentsline {subsubsection}{\numberline {3.1.1}Time-Varying Properties}{14}{subsubsection.0.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Numerical Accuracy}{15}{subsubsection.0.3.1.2}%
+\contentsline {section}{\numberline {A}Notation}{17}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Battery Parameters}{17}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Power Consumption Parameters}{17}{subsection.A.2}%
+\contentsline {subsubsection}{\numberline {A.2.1}Total Power Model}{17}{subsubsection.A.2.1}%
+\contentsline {subsubsection}{\numberline {A.2.2}Screen Power}{18}{subsubsection.A.2.2}%
+\contentsline {subsubsection}{\numberline {A.2.3}CPU Power}{18}{subsubsection.A.2.3}%
+\contentsline {subsubsection}{\numberline {A.2.4}Network Power}{18}{subsubsection.A.2.4}%
+\contentsline {subsubsection}{\numberline {A.2.5}GPS Power}{19}{subsubsection.A.2.5}%
+\contentsline {subsubsection}{\numberline {A.2.6}Audio Power}{19}{subsubsection.A.2.6}%
+\contentsline {subsubsection}{\numberline {A.2.7}System Mode Power Adjustment}{19}{subsubsection.A.2.7}%
+\contentsline {subsection}{\numberline {A.3}Thermal Parameters}{20}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Time and Derived Quantities}{20}{subsection.A.4}%
 \contentsfinish 
