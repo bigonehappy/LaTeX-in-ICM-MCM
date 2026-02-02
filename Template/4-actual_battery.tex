@@ -11,7 +11,7 @@
                                                   temperature.
             \item \textbf{Shutdown Voltage}: Electronics need a minimum voltage to operate correctly. If the battery voltage drops(steadily or suddenly) 
                                              below this threshold, the device will shutdown even if $SOC$ is not zero. In this section, we'll assume that 
-                                             if the battery voltage drops below $3.2 \mathrm{V}$, the device will shutdown immediately.
+                                             if the battery voltage drops below 3.2V, the device will shutdown immediately.
         \end{itemize}
 
     \subsection{Temperature Behavior of Battery}
@@ -88,7 +88,7 @@
         By utilizing acquired smartphone state data, we estimate the parameters within these models, thereby obtaining a comprehensive power consumption 
         model for complex usage scenarios.  %TODO: Reference to dataset
 
-        \subsubsection{Screen Power \texorpdfstring{$P_{screen}$}{P\_screen}}
+        \subsubsection{Screen Power}
         When the screen is on, it exhibits a base power draw plus a near-linear OLED power component (the modeling here assumes an OLED display):
         \begin{equation}
             \label{eq:P_screen}
@@ -96,7 +96,7 @@
         \end{equation}
         where $S$ is a screen state indicator and $B$ is the brightness level (0--255).
 
-        \subsubsection{CPU Power \texorpdfstring{$P_{CPU}$}{P\_CPU}}
+        \subsubsection{CPU Power}
         CPU power is the largest variable power source in a smartphone. According to the dynamic power formula for CMOS circuits:
         \begin{equation}
             P_{dynamic} = C \cdot V^2 \cdot f
@@ -119,7 +119,7 @@
         where $U$ represents CPU utilization, and $f_{big}$, $f_{small}$ are the operating frequencies of the big and small cores, normalized to their 
         respective maximum frequencies.
 
-        \subsubsection{Network Power \texorpdfstring{$P_{network}$}{P\_network}}
+        \subsubsection{Network Power}
         Power consumption in wireless communication stems primarily from the Radio Frequency (RF) front-end, especially the Power Amplifier (PA). 
         According to the Friis transmission equation, received power is inversely proportional to the square of the distance:
         \begin{equation}
@@ -127,8 +127,8 @@
         \end{equation}
 
         Consequently, to maintain communication quality over distances up to several kilometers for cellular networks, relatively high transmit power is 
-        required (typically $200 \sim 500 \mathrm{mW}$). In contrast, WiFi communication with a router within tens of meters uses lower transmit power 
-        (typically $50 \sim 100 \mathrm{mW}$). Moreover, PA efficiency is typically only $30 \sim 40\%$, with substantial energy converted to heat, making
+        required (typically $200 \sim 500 \text{mW}$). In contrast, WiFi communication with a router within tens of meters uses lower transmit power 
+        (typically $50 \sim 100 \text{mW}$). Moreover, PA efficiency is typically only $30 \sim 40\%$, with substantial energy converted to heat, making
         network power a significant contributor to total consumption.
 
         Since WiFi and cellular networks are typically used exclusively in practice, our model uses a single indicator variable for network type:
@@ -138,7 +138,7 @@
         \end{equation}
         where $M$ indicates active network type.
 
-        \subsubsection{GPS Power \texorpdfstring{$P_{GPS}$}{P\_GPS}}
+        \subsubsection{GPS Power}
         The GPS module continuously receives weak signals from multiple satellites and performs complex signal demodulation and position calculation. 
         Its power draw is relatively stable and depends mainly on whether it is active. We adopt a discrete model:
         \begin{equation}
@@ -147,7 +147,7 @@
         \end{equation}
         where $G$ is a binary indicator for GPS activity.
 
-        \subsubsection{Audio Power \texorpdfstring{$P_{audio}$}{P\_audio}}
+        \subsubsection{Audio Power}
         The audio module primarily involves compression/decompression processing via an audio DSP, digital-to-analog conversion (DAC), and driving 
         speakers or headphones. We simplify the modeling to a binary indicator for audio playback activity:
         \begin{equation}
@@ -155,7 +155,7 @@
             P_{audio} = \alpha_A \cdot A
         \end{equation}
 
-        \subsubsection{System Mode Power Adjustment \texorpdfstring{$P_{mode}$}{P\_mode}}
+        \subsubsection{System Mode Power Adjustment}
         Modern smartphones offer various system modes for power management, such as Power Saving Mode and Flight Mode. However, most of their energy-saving effects are achieved by altering other parameters (e.g., reducing CPU frequency, limiting network activity), which are already captured by other terms in the model. Therefore, $P_{mode}$ represents additional energy-saving mechanisms. Power Saving Mode may disable unnecessary sensors, reduce refresh rates, and optimize memory management, while Flight Mode directly powers down RF modules. The model is:
         \begin{equation}
             \label{eq:P_mode}
@@ -199,12 +199,7 @@
             \label{fig:power_model_fitting}
         \end{figure}
 
-        Results demonstrate that the white-box power model constructed based on the real-world smartphone dataset achieves satisfactory prediction 
-        performance, with an $R^2$ of $0.606$, an MAE of $0.355 \mathrm{W}$, and an RMSE of $0.461 \mathrm{W}$. Among the factors analyzed, CPU usage and 
-        data network activity exhibit the most significant impact on power draw, whereas GPS consumption and the energy-saving effects of the two included
-        modes show relatively minor influence. As mentioned above, the energy-saving effects of these two modes in practice primarily stem from their 
-        influence on the aforementioned features; the small coefficients here reflect that their impact on factors beyond those already captured is 
-        relatively minor.
+        Results demonstrate that the white-box power model constructed based on the real-world smartphone dataset achieves satisfactory prediction performance, with an $R^2$ of 0.606, an MAE of 0.355 W, and an RMSE of 0.461 W. Among the factors analyzed, CPU usage and data network activity exhibit the most significant impact on power draw, whereas GPS consumption and the energy-saving effects of the two included modes show relatively minor influence. As mentioned above, the energy-saving effects of these two modes in practice primarily stem from their influence on the aforementioned features; the small coefficients here reflect that their impact on factors beyond those already captured is relatively minor.
 
         \subsubsection{Usage Scenario Simulation}
         The model allows us to estimate the smartphone's power consumption under various typical usage scenarios. Here are some typical scenarios and 
