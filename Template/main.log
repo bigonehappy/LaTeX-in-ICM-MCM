@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 21:06
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  2 FEB 2026 21:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1170,17 +1170,17 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
  (d:/TexLive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [2])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [2] (./1-introduction.tex) (./2-notations.tex) (./3-ideal_battery.tex
+ [3] (./1-introduction.tex) (./2-notations.tex) (./3-ideal_battery.tex
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 5.
  (d:/TexLive/2024/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [3
+) [4
 
-] [4]
+] [5]
 File: img/fitting_OCV.png Graphic file (type bmp)
 <img/fitting_OCV.png>
 File: img/fitting_R0.png Graphic file (type bmp)
@@ -1193,7 +1193,7 @@ File: img/fitting_C2.png Graphic file (type bmp)
 <img/fitting_C2.png>
 File: img/fitting_R2.png Graphic file (type bmp)
 <img/fitting_R2.png>
- [5] [6]
+ [6] [7]
 File: img/ci_SOC_profile.png Graphic file (type bmp)
 <img/ci_SOC_profile.png>
 File: img/ci_voltage_profile.png Graphic file (type bmp)
@@ -1202,7 +1202,7 @@ File: img/cp_SOC_profile.png Graphic file (type bmp)
 <img/cp_SOC_profile.png>
 File: img/cp_voltage_profile.png Graphic file (type bmp)
 <img/cp_voltage_profile.png>
- [7]) (./4-actual_battery.tex [8]
+ [8]) (./4-actual_battery.tex [9]
 File: img/3d_surface_R0.png Graphic file (type bmp)
 <img/3d_surface_R0.png>
 File: img/3d_surface_R1.png Graphic file (type bmp)
@@ -1216,17 +1216,17 @@ Overfull \hbox (3.09038pt too wide) in paragraph at lines 60--63
 \T1/ppl/m/n/12 tem-per-a-ture im-proves bat-tery short-term per-for-mance, it also ac-cel-er-ates bat-tery degra-
  []
 
-[9] [10]
-Overfull \hbox (0.76605pt too wide) in paragraph at lines 128--132
+[10] [11]
+Overfull \hbox (0.76605pt too wide) in paragraph at lines 129--133
 \T1/ppl/m/n/12 me-ters for cel-lu-lar net-works, rel-a-tively high trans-mit power is re-quired (typ-i-cally $\OT1/cmr/m/n/12 200 \OMS/cmsy/m/n/12 ^^X
  []
 
 
-Overfull \hbox (5.38364pt too wide) in paragraph at lines 150--152
+Overfull \hbox (5.38364pt too wide) in paragraph at lines 151--153
 \T1/ppl/m/n/12 an au-dio DSP, digital-to-analog con-ver-sion (DAC), and driv-ing speak-ers or head-phones.
  []
 
-[11]
+[12]
 File: img/power_model_coefficients.png Graphic file (type bmp)
 <img/power_model_coefficients.png>
 File: img/power_model_contribution.png Graphic file (type bmp)
@@ -1235,27 +1235,41 @@ File: img/power_model_prediction.png Graphic file (type bmp)
 <img/power_model_prediction.png>
 File: img/power_model_residuals.png Graphic file (type bmp)
 <img/power_model_residuals.png>
- [12] [13]
+ [13] [14]
 File: img/depletion_time_thermal_heatmap.png Graphic file (type bmp)
 <img/depletion_time_thermal_heatmap.png>
 File: img/max_temperature_thermal_heatmap.png Graphic file (type bmp)
 <img/max_temperature_thermal_heatmap.png>
- [14]) (./5-sensitivity_analysis.tex
+ [15]) (./5-sensitivity_analysis.tex
 File: img/voltage_error_comparison.png Graphic file (type bmp)
 <img/voltage_error_comparison.png>
- [15]
+ [16]
 File: img/sensitivity_error_R0.png Graphic file (type bmp)
 <img/sensitivity_error_R0.png>
 File: img/sensitivity_error_R1.png Graphic file (type bmp)
 <img/sensitivity_error_R1.png>
 File: img/sensitivity_error_R2.png Graphic file (type bmp)
 <img/sensitivity_error_R2.png>
- [16]
+ [17]
 File: img/pulse_voltage_error_C1.png Graphic file (type bmp)
 <img/pulse_voltage_error_C1.png>
 File: img/pulse_voltage_error_C2.png Graphic file (type bmp)
 <img/pulse_voltage_error_C2.png>
-) (./6-recommendations.tex) [17] (./7-appendix.tex
+) (./6-recommendations.tex [18]
+Overfull \hbox (4.61534pt too wide) in paragraph at lines 15--16
+\T1/ppl/m/n/12 im-prove-ment for each power-saving ac-tion rel-a-tive to a web brows-ing base-line (1.08 W).
+ []
+
+File: img/power_saving_effects.pdf Graphic file (type pdf)
+<use img/power_saving_effects.pdf>
+File: img/battery_lifespan_users.pdf Graphic file (type pdf)
+<use img/battery_lifespan_users.pdf>
+[19])
+Overfull \hbox (1.87892pt too wide) in paragraph at lines 64--191
+[]\T1/ppl/m/n/12 By com-bin-ing short-term power man-age-ment with long-term health prac-tices, users
+ []
+
+[20] (./7-appendix.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--13
 []|\T1/ppl/m/n/12 Internal Re-sis-
  []
@@ -1330,7 +1344,7 @@ Underfull \hbox (badness 1331) in paragraph at lines 54--54
 []|\T1/ppl/m/n/12 Power con-sump-tion of dis-
  []
 
-[18]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 74--74
 []|\T1/ppl/m/n/12 Big Core Fre-
  []
@@ -1370,7 +1384,7 @@ Underfull \hbox (badness 1558) in paragraph at lines 112--112
 []|\T1/ppl/m/n/12 GPS Power Co-
  []
 
-[19]
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 128--128
 []|\T1/ppl/m/n/12 Audio Power
  []
@@ -1405,26 +1419,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--167
 []|\T1/ppl/m/n/12 Heat Trans-fer
  []
 
-[20]
+[23]
 Underfull \hbox (badness 3679) in paragraph at lines 186--186
 []|\T1/ppl/m/n/12 Maximum Tem-
  []
 
-) (./8-references.tex) (./9-ai_use_report.tex [21]
+) (./8-references.tex) (./9-ai_use_report.tex [24]
 Overfull \hbox (18.0433pt too wide) in paragraph at lines 36--37
 \T1/ppl/b/n/12 Team's Con-tri-bu-tion: \T1/ppl/m/n/12 Fol-low-ing this ad-vice, we searched for smartphone-specific datasets
  []
 
-[22
+[25
 
 ] (d:/TexLive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
-) [23] [24]
+) [26] [27]
 Overfull \hbox (38.7541pt too wide) in paragraph at lines 147--158
  [][] 
  []
 
-) [25] 
+) [28] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1432,15 +1446,15 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 264068F0D5000E46F47A073C91E7269B;8550.
+(rerunfilecheck)             Checksum: 4AEF6C413BE7C4589F2FDE73CA5240A6;9438.
  ) 
 Here is how much of TeX's memory you used:
- 36853 strings out of 476720
- 726027 string characters out of 5801445
+ 36884 strings out of 476720
+ 726896 string characters out of 5801445
  1939842 words of memory out of 5000000
- 58184 multiletter control sequences out of 15000+600000
+ 58213 multiletter control sequences out of 15000+600000
  582302 words of font info for 82 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  94i,13n,107p,688b,1482s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (25 pages).
+Output written on main.pdf (28 pages).
