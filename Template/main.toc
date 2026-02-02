@@ -30,4 +30,13 @@
 \contentsline {subsubsection}{\numberline {A.2.7}System Mode Power Adjustment}{17}{subsubsection.A.2.7}%
 \contentsline {subsection}{\numberline {A.3}Thermal Parameters}{18}{subsection.A.3}%
 \contentsline {subsection}{\numberline {A.4}Time and Derived Quantities}{18}{subsection.A.4}%
+\contentsline {section}{\numberline {B}Use of AI}{19}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Battery Dataset Selection}{19}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Dataset Overview and Statistics}{19}{subsection.B.2}%
+\contentsline {subsection}{\numberline {B.3}Coefficient Reasonableness Analysis}{20}{subsection.B.3}%
+\contentsline {subsection}{\numberline {B.4}Data Sampling Strategy}{20}{subsection.B.4}%
+\contentsline {subsection}{\numberline {B.5}LaTeX Equation Formatting}{21}{subsection.B.5}%
+\contentsline {subsection}{\numberline {B.6}LaTeX Table Column Width Adjustment}{21}{subsection.B.6}%
+\contentsline {subsection}{\numberline {B.7}Summary of AI Usage}{22}{subsection.B.7}%
+\contentsline {subsection}{\numberline {B.8}Declaration}{22}{subsection.B.8}%
 \contentsfinish 

@@ -623,6 +623,12 @@ INPUT ./9-ai_use_report.tex
 INPUT ./9-ai_use_report.tex
 INPUT ./9-ai_use_report.tex
 INPUT 9-ai_use_report.tex
+INPUT c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out

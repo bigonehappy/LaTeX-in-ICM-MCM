@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  2 FEB 2026 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.2)  2 FEB 2026 18:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1192,75 +1192,75 @@ File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ) [3
 
 ]
-<img/fitting_OCV.png, id=204, 425.9112pt x 353.6412pt>
+<img/fitting_OCV.png, id=249, 425.9112pt x 353.6412pt>
 File: img/fitting_OCV.png Graphic file (type png)
 <use img/fitting_OCV.png>
 Package pdftex.def Info: img/fitting_OCV.png  used on input line 132.
 (pdftex.def)             Requested size: 204.85846pt x 170.09659pt.
-<img/fitting_R0.png, id=206, 424.9476pt x 353.6412pt>
+<img/fitting_R0.png, id=251, 424.9476pt x 353.6412pt>
 File: img/fitting_R0.png Graphic file (type png)
 <use img/fitting_R0.png>
 Package pdftex.def Info: img/fitting_R0.png  used on input line 137.
 (pdftex.def)             Requested size: 204.85846pt x 170.4851pt.
-<img/fitting_C1.png, id=207, 425.9112pt x 353.6412pt>
+<img/fitting_C1.png, id=252, 425.9112pt x 353.6412pt>
 File: img/fitting_C1.png Graphic file (type png)
 <use img/fitting_C1.png>
 Package pdftex.def Info: img/fitting_C1.png  used on input line 142.
 (pdftex.def)             Requested size: 204.85846pt x 170.09659pt.
-<img/fitting_R1.png, id=208, 424.9476pt x 353.6412pt>
+<img/fitting_R1.png, id=253, 424.9476pt x 353.6412pt>
 File: img/fitting_R1.png Graphic file (type png)
 <use img/fitting_R1.png>
 Package pdftex.def Info: img/fitting_R1.png  used on input line 147.
 (pdftex.def)             Requested size: 204.85846pt x 170.4851pt.
-<img/fitting_C2.png, id=209, 425.9112pt x 353.6412pt>
+<img/fitting_C2.png, id=254, 425.9112pt x 353.6412pt>
 File: img/fitting_C2.png Graphic file (type png)
 <use img/fitting_C2.png>
 Package pdftex.def Info: img/fitting_C2.png  used on input line 152.
 (pdftex.def)             Requested size: 204.85846pt x 170.09659pt.
-<img/fitting_R2.png, id=210, 424.9476pt x 353.6412pt>
+<img/fitting_R2.png, id=255, 424.9476pt x 353.6412pt>
 File: img/fitting_R2.png Graphic file (type png)
 <use img/fitting_R2.png>
 Package pdftex.def Info: img/fitting_R2.png  used on input line 157.
 (pdftex.def)             Requested size: 204.85846pt x 170.4851pt.
  [4] [5 <./img/fitting_OCV.png> <./img/fitting_R0.png> <./img/fitting_C1.png> <./img/fitting_R1.png> <./img/fitting_C2.png> <./img/fitting_R2.png>]
-<img/ci_soc_profile.png, id=241, 425.4294pt x 353.1594pt>
+<img/ci_soc_profile.png, id=286, 425.4294pt x 353.1594pt>
 File: img/ci_soc_profile.png Graphic file (type png)
 <use img/ci_soc_profile.png>
 Package pdftex.def Info: img/ci_soc_profile.png  used on input line 195.
 (pdftex.def)             Requested size: 204.85846pt x 170.05884pt.
-<img/ci_voltage_profile.png, id=242, 425.4294pt x 353.1594pt>
+<img/ci_voltage_profile.png, id=287, 425.4294pt x 353.1594pt>
 File: img/ci_voltage_profile.png Graphic file (type png)
 <use img/ci_voltage_profile.png>
 Package pdftex.def Info: img/ci_voltage_profile.png  used on input line 200.
 (pdftex.def)             Requested size: 204.85846pt x 170.05884pt.
  [6 <./img/ci_soc_profile.png> <./img/ci_voltage_profile.png>]
-<img/cp_soc_profile.png, id=252, 425.4294pt x 353.1594pt>
+<img/cp_soc_profile.png, id=297, 425.4294pt x 353.1594pt>
 File: img/cp_soc_profile.png Graphic file (type png)
 <use img/cp_soc_profile.png>
 Package pdftex.def Info: img/cp_soc_profile.png  used on input line 220.
 (pdftex.def)             Requested size: 204.85846pt x 170.05884pt.
-<img/cp_voltage_profile.png, id=253, 425.4294pt x 353.1594pt>
+<img/cp_voltage_profile.png, id=298, 425.4294pt x 353.1594pt>
 File: img/cp_voltage_profile.png Graphic file (type png)
 <use img/cp_voltage_profile.png>
 Package pdftex.def Info: img/cp_voltage_profile.png  used on input line 225.
 (pdftex.def)             Requested size: 204.85846pt x 170.05884pt.
 ) (./4-actual_battery.tex [7 <./img/cp_soc_profile.png> <./img/cp_voltage_profile.png>]
-<img/3d_surface_R0.png, id=264, 463.2507pt x 450.9648pt>
+<img/3d_surface_R0.png, id=309, 463.2507pt x 450.9648pt>
 File: img/3d_surface_R0.png Graphic file (type png)
 <use img/3d_surface_R0.png>
 Package pdftex.def Info: img/3d_surface_R0.png  used on input line 36.
 (pdftex.def)             Requested size: 136.57462pt x 132.95088pt.
-<img/3d_surface_R1.png, id=265, 456.0237pt x 450.9648pt>
+<img/3d_surface_R1.png, id=310, 456.0237pt x 450.9648pt>
 File: img/3d_surface_R1.png Graphic file (type png)
 <use img/3d_surface_R1.png>
 Package pdftex.def Info: img/3d_surface_R1.png  used on input line 41.
 (pdftex.def)             Requested size: 136.57462pt x 135.05652pt.
-<img/3d_surface_R2.png, id=266, 459.99855pt x 450.9648pt>
+<img/3d_surface_R2.png, id=311, 459.99855pt x 450.9648pt>
 File: img/3d_surface_R2.png Graphic file (type png)
 <use img/3d_surface_R2.png>
 Package pdftex.def Info: img/3d_surface_R2.png  used on input line 46.
 (pdftex.def)             Requested size: 136.57462pt x 133.8936pt.
-<img/depletion_time_heatmap.png, id=267, 598.8774pt x 534.3162pt>
+<img/depletion_time_heatmap.png, id=312, 598.8774pt x 534.3162pt>
 File: img/depletion_time_heatmap.png Graphic file (type png)
 <use img/depletion_time_heatmap.png>
 Package pdftex.def Info: img/depletion_time_heatmap.png  used on input line 56.
@@ -1280,33 +1280,33 @@ Overfull \hbox (5.38364pt too wide) in paragraph at lines 150--152
 \T1/ppl/m/n/12 an au-dio DSP, digital-to-analog con-ver-sion (DAC), and driv-ing speak-ers or head-phones.
  []
 
-<img/power_model_coefficients.png, id=301, 424.2249pt x 351.714pt>
+<img/power_model_coefficients.png, id=347, 424.2249pt x 351.714pt>
 File: img/power_model_coefficients.png Graphic file (type png)
 <use img/power_model_coefficients.png>
 Package pdftex.def Info: img/power_model_coefficients.png  used on input line 181.
 (pdftex.def)             Requested size: 218.51521pt x 181.16425pt.
-<img/power_model_contribution.png, id=302, 424.2249pt x 351.4731pt>
+<img/power_model_contribution.png, id=348, 424.2249pt x 351.4731pt>
 File: img/power_model_contribution.png Graphic file (type png)
 <use img/power_model_contribution.png>
 Package pdftex.def Info: img/power_model_contribution.png  used on input line 185.
 (pdftex.def)             Requested size: 218.51521pt x 181.04016pt.
-<img/power_model_prediction.png, id=303, 423.7431pt x 351.714pt>
+<img/power_model_prediction.png, id=349, 423.7431pt x 351.714pt>
 File: img/power_model_prediction.png Graphic file (type png)
 <use img/power_model_prediction.png>
 Package pdftex.def Info: img/power_model_prediction.png  used on input line 191.
 (pdftex.def)             Requested size: 218.51521pt x 181.37355pt.
-<img/power_model_residuals.png, id=304, 423.7431pt x 351.714pt>
+<img/power_model_residuals.png, id=350, 423.7431pt x 351.714pt>
 File: img/power_model_residuals.png Graphic file (type png)
 <use img/power_model_residuals.png>
 Package pdftex.def Info: img/power_model_residuals.png  used on input line 195.
 (pdftex.def)             Requested size: 218.51521pt x 181.37355pt.
 [11] [12 <./img/power_model_coefficients.png> <./img/power_model_contribution.png> <./img/power_model_prediction.png> <./img/power_model_residuals.png>]
-<img/depletion_time_thermal_heatmap.png, id=328, 598.8774pt x 534.3162pt>
+<img/depletion_time_thermal_heatmap.png, id=373, 598.8774pt x 534.3162pt>
 File: img/depletion_time_thermal_heatmap.png Graphic file (type png)
 <use img/depletion_time_thermal_heatmap.png>
 Package pdftex.def Info: img/depletion_time_thermal_heatmap.png  used on input line 277.
 (pdftex.def)             Requested size: 204.85846pt x 182.7739pt.
-<img/max_temperature_thermal_heatmap.png, id=329, 592.614pt x 534.3162pt>
+<img/max_temperature_thermal_heatmap.png, id=374, 592.614pt x 534.3162pt>
 File: img/max_temperature_thermal_heatmap.png Graphic file (type png)
 <use img/max_temperature_thermal_heatmap.png>
 Package pdftex.def Info: img/max_temperature_thermal_heatmap.png  used on input line 281.
@@ -1476,7 +1476,21 @@ Underfull \hbox (badness 3679) in paragraph at lines 186--186
 []|\T1/ppl/m/n/12 Maximum Tem-
  []
 
-) (./8-references.tex) (./9-ai_use_report.tex) [18] 
+) (./8-references.tex) (./9-ai_use_report.tex [18]
+Overfull \hbox (18.0433pt too wide) in paragraph at lines 36--37
+\T1/ppl/b/n/12 Team's Con-tri-bu-tion: \T1/ppl/m/n/12 Fol-low-ing this ad-vice, we searched for smartphone-specific datasets
+ []
+
+[19
+
+] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+) [20] [21]
+Overfull \hbox (38.7541pt too wide) in paragraph at lines 147--158
+ [][] 
+ []
+
+) [22] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1484,21 +1498,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 92F307A862119BF50E889484A706A89F;5341.
+(rerunfilecheck)             Checksum: 9A479C1250C1D55D6DE624E01CF33F4A;6978.
  ) 
 Here is how much of TeX's memory you used:
- 37331 strings out of 467533
- 732503 string characters out of 5423669
- 1338339 words of memory out of 5000000
- 65452 multiletter control sequences out of 15000+600000
- 657294 words of font info for 96 fonts, out of 8000000 for 9000
+ 37901 strings out of 467533
+ 739219 string characters out of 5423669
+ 1483034 words of memory out of 5000000
+ 65998 multiletter control sequences out of 15000+600000
+ 657915 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,13n,108p,822b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,13n,108p,822b,1583s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2025/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (18 pages, 2667279 bytes).
+Output written on main.pdf (22 pages, 2689953 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 382 compressed objects within 4 object streams
- 103 named destinations out of 1000 (max. 500000)
- 369 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 559 PDF objects out of 1000 (max. 8388607)
+ 452 compressed objects within 5 object streams
+ 124 named destinations out of 1000 (max. 500000)
+ 441 words of extra memory for PDF output out of 10000 (max. 10000000)
 
