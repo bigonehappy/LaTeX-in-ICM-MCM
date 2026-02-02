@@ -1,0 +1,64 @@
+\section{User Recommendations}
+\label{sec:recommendations}
+
+Based on the power consumption model and battery degradation analysis, we provide practical recommendations for smartphone users. These recommendations are organized into two categories: \textbf{short-term advice} for extending single-charge runtime, and \textbf{long-term advice} for maximizing battery lifespan.
+
+\subsection{Short-Term Recommendations: Extending Battery Runtime}
+
+For users concerned with maximizing daily battery life, we quantify the effect of various power-saving measures based on our power consumption model. Assuming a constant power draw $P$, the simplified runtime can be expressed as:
+\begin{equation}
+T_{\text{runtime}} = \frac{E_{\text{capacity}}}{P_{\text{total}}}
+\label{eq:runtime}
+\end{equation}
+where $E_{\text{capacity}} = 15.2~\text{Wh}$ for our reference 4000~mAh battery.
+
+Using the power model coefficients from Section~\ref{sec:power_model}, we calculate the battery life improvement for each power-saving action relative to a web browsing baseline (1.08~W). The results are shown in Figure~\ref{fig:power_saving}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.78\textwidth]{img/power_saving_effects.pdf}
+    \caption{Effect of power-saving measures on battery runtime}
+    \label{fig:power_saving}
+\end{figure}
+
+Based on these results, we briefly summarize the power-saving actions:
+
+\begin{itemize}
+    \item \textbf{WiFi vs. Cellular}: Switching from cellular to WiFi reduces power by 0.696~W, improving battery life by 181\%.
+    \item \textbf{Screen Off}: Turning off the display when not in use saves approximately 0.554~W (at 50\% brightness), extending runtime by 105\%.
+    \item \textbf{Lower Brightness}: Reducing screen brightness from 100\% to 30\% saves 0.412~W, a 62\% improvement.
+    \item \textbf{Disable Audio}: Muting audio playback reduces power by 0.397~W, adding 53\% to battery life.
+    \item \textbf{Power-Saving Mode}: While providing only +7\% direct improvement, this mode is often the simplest solution as it automatically applies multiple optimizations above---reducing brightness, limiting background activity, and restricting network usage.
+\end{itemize}
+
+\subsection{Long-Term Recommendations: Maximizing Battery Lifespan}
+
+Battery capacity degrades over charge-discharge cycles. We adopt a simplified linear aging model:
+\begin{equation}
+Q(n) = Q_0 \cdot (1 - \alpha \cdot n)
+\label{eq:aging}
+\end{equation}
+where $n$ is the number of full equivalent cycles and $\alpha$ is the capacity fade rate per cycle.
+
+Using the NASA Battery Dataset, we fitted $\alpha = 0.000411$ per cycle ($R^2 = 0.97$), indicating 0.041\% capacity loss per cycle. At 500 cycles, capacity retention is approximately 79.5\%, consistent with the industry standard of 80\% end-of-life threshold.
+
+Figure~\ref{fig:lifespan} shows the time required for different user types to reach various capacity thresholds, based on their daily energy consumption patterns.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.80\textwidth]{img/battery_lifespan_users.pdf}
+    \caption{Time to reach different capacity thresholds}
+    \label{fig:lifespan}
+\end{figure}
+
+Light users (6~Wh/day) can maintain 80\% capacity for 3.4 years, comfortably exceeding typical 2-year warranty periods. Normal users (10~Wh/day) reach the 80\% threshold at approximately 2.0 years---right at the warranty boundary. Heavy users (18~Wh/day) may need battery replacement within 1.1 years to maintain 80\% capacity.
+
+To maximize long-term battery health, we recommend:
+\begin{itemize}
+    \item \textbf{Reduce daily energy consumption}: Following the short-term recommendations above reduces cycle frequency and extends lifespan proportionally.
+    \item \textbf{Maintain 20\%--80\% charge range}: Avoiding extreme charge states reduces electrochemical stress on the battery.
+    \item \textbf{Avoid high-temperature charging}: Elevated temperatures accelerate degradation according to Arrhenius kinetics; remove phone cases during charging.
+    \item \textbf{Use standard-speed charging}: Fast charging generates more heat; reserve it for emergencies.
+\end{itemize}
+
+By combining short-term power management with long-term health practices, users can maintain battery capacity above 80\% for 2--3 years under normal usage conditions.
